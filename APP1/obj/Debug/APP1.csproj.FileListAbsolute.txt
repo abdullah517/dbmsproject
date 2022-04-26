@@ -1,0 +1,15 @@
+C:\Users\hls\source\repos\APP1\APP1\bin\Debug\APP1.exe.config
+C:\Users\hls\source\repos\APP1\APP1\bin\Debug\APP1.exe
+C:\Users\hls\source\repos\APP1\APP1\bin\Debug\APP1.pdb
+C:\Users\hls\source\repos\APP1\APP1\bin\Debug\Guna.UI.dll
+C:\Users\hls\source\repos\APP1\APP1\bin\Debug\Guna.UI2.dll
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.csproj.AssemblyReference.cache
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.Properties.Resources.resources
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.csproj.GenerateResource.cache
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.csproj.CoreCompileInputs.cache
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.csproj.CopyComplete
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.exe
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.pdb
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.LogIn.resources
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.Dashboard.resources
+C:\Users\hls\source\repos\APP1\APP1\obj\Debug\APP1.AddNewRoom.resources

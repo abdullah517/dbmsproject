@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace APP1
+{
+    public partial class Dashboard : Form
+    {
+        public Dashboard()
+        {
+            InitializeComponent();
+        }
+
+        private void btnlogout_Click(object sender, EventArgs e)
+        {
+            LogIn ls = new LogIn();
+            ls.Show();
+            this.Hide();
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        Boolean labelvisible = true;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (labelvisible == true)
+            {
+                hmslabel.Visible = true;
+                labelvisible = false;
+            }
+            else
+            {
+                hmslabel.Visible = false;
+                labelvisible = true;
+            }
+        }
+
+        private void btnmanageroom_Click(object sender, EventArgs e)
+        {
+            AddNewRoom anr = new AddNewRoom();
+            anr.Show();
+        }
+    }
+}
