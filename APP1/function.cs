@@ -14,7 +14,7 @@ namespace APP1
         protected SqlConnection getconnection()
         {
             SqlConnection cnn = new SqlConnection();
-            cnn.ConnectionString = "Data source =DESKTOP-OPJPDI0;database=hostel;integrated security=true";
+            cnn.ConnectionString = "data source =DESKTOP-H410BET;database=hostel;integrated security=True";
             return cnn;
         }
 
@@ -22,17 +22,21 @@ namespace APP1
         {
             SqlConnection cnn = getconnection();
             SqlCommand cmd = new SqlCommand(query, cnn);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            cmd.Connection = cnn;
+            cmd.CommandText = query;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
-            sda.Fill(ds);
+            da.Fill(ds);
             return ds;
         }
 
         public void setdata(string query,string msg)
         {
-            SqlConnection cnn = new SqlConnection();
+            SqlConnection cnn = getconnection();
             SqlCommand cmd = new SqlCommand(query,cnn);
+            cmd.Connection= cnn;
             cnn.Open();
+            cmd.CommandText= query;
             cmd.ExecuteNonQuery();
             cnn.Close();
             MessageBox.Show(msg,"Information",MessageBoxButtons.OK,MessageBoxIcon.Information);

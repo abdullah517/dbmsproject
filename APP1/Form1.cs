@@ -19,7 +19,7 @@ namespace APP1
 
         private void btnsignin_Click(object sender, EventArgs e)
         {
-            if (txtusername.Text == "abdullah" && txtpassword.Text == "1234")
+            if (txtusername.Text == "abcd" && txtpassword.Text == "1234")
             {
                 this.Hide();
                 Dashboard ds = new Dashboard();
@@ -29,6 +29,21 @@ namespace APP1
                 MessageBox.Show("Please fill both fields","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             else
                 MessageBox.Show("Please enter valid details","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+        }
+
+        private void txtusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Chip1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
