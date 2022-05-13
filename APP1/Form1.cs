@@ -30,20 +30,5 @@ namespace APP1
             else
                 MessageBox.Show("Please enter valid details","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
         }
-
-        private void txtusername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Chip1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LogIn_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

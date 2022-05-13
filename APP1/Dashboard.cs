@@ -48,5 +48,11 @@ namespace APP1
             AddNewRoom anr = new AddNewRoom();
             anr.Show();
         }
+
+        private void new_stu_btn_Click(object sender, EventArgs e)
+        {
+            NewStudent ns = new NewStudent();
+            ns.Show();
+        }
     }
 }

@@ -62,10 +62,9 @@ namespace APP1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(30, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(20, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 40);
+            this.label1.Size = new System.Drawing.Size(183, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Room";
             // 
@@ -74,10 +73,9 @@ namespace APP1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(4, 115);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(3, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 27);
+            this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Room Number";
             // 
@@ -86,10 +84,9 @@ namespace APP1
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(30, 286);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(20, 186);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(395, 40);
+            this.label3.Size = new System.Drawing.Size(267, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Update or Delete Room";
             // 
@@ -98,10 +95,9 @@ namespace APP1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(578, 171);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(385, 111);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(277, 27);
+            this.label4.Size = new System.Drawing.Size(180, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Activate or Deactivate";
             // 
@@ -110,10 +106,9 @@ namespace APP1
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(4, 355);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(3, 231);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 27);
+            this.label5.Size = new System.Drawing.Size(113, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Room Number";
             // 
@@ -122,10 +117,9 @@ namespace APP1
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(747, 355);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(498, 231);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(277, 27);
+            this.label6.Size = new System.Drawing.Size(180, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Activate or Deactivate";
             // 
@@ -141,13 +135,13 @@ namespace APP1
             this.txtroomno1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtroomno1.ForeColor = System.Drawing.Color.Black;
             this.txtroomno1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtroomno1.Location = new System.Drawing.Point(210, 115);
-            this.txtroomno1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtroomno1.Location = new System.Drawing.Point(140, 75);
+            this.txtroomno1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtroomno1.Name = "txtroomno1";
             this.txtroomno1.PasswordChar = '\0';
             this.txtroomno1.PlaceholderText = "";
             this.txtroomno1.SelectedText = "";
-            this.txtroomno1.Size = new System.Drawing.Size(300, 46);
+            this.txtroomno1.Size = new System.Drawing.Size(200, 30);
             this.txtroomno1.TabIndex = 6;
             // 
             // CheckBox1
@@ -158,10 +152,9 @@ namespace APP1
             this.CheckBox1.CheckedState.BorderThickness = 0;
             this.CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CheckBox1.ForeColor = System.Drawing.Color.Black;
-            this.CheckBox1.Location = new System.Drawing.Point(856, 175);
-            this.CheckBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CheckBox1.Location = new System.Drawing.Point(571, 114);
             this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(63, 24);
+            this.CheckBox1.Size = new System.Drawing.Size(44, 17);
             this.CheckBox1.TabIndex = 7;
             this.CheckBox1.Text = "Yes";
             this.CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -181,13 +174,13 @@ namespace APP1
             this.txtroomno2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtroomno2.ForeColor = System.Drawing.Color.Black;
             this.txtroomno2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtroomno2.Location = new System.Drawing.Point(210, 355);
-            this.txtroomno2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtroomno2.Location = new System.Drawing.Point(140, 231);
+            this.txtroomno2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtroomno2.Name = "txtroomno2";
             this.txtroomno2.PasswordChar = '\0';
             this.txtroomno2.PlaceholderText = "";
             this.txtroomno2.SelectedText = "";
-            this.txtroomno2.Size = new System.Drawing.Size(300, 46);
+            this.txtroomno2.Size = new System.Drawing.Size(200, 30);
             this.txtroomno2.TabIndex = 9;
             // 
             // btnupdate
@@ -197,10 +190,9 @@ namespace APP1
             this.btnupdate.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.ForeColor = System.Drawing.Color.White;
             this.btnupdate.Image = ((System.Drawing.Image)(resources.GetObject("btnupdate.Image")));
-            this.btnupdate.Location = new System.Drawing.Point(856, 415);
-            this.btnupdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnupdate.Location = new System.Drawing.Point(571, 270);
             this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(177, 46);
+            this.btnupdate.Size = new System.Drawing.Size(118, 30);
             this.btnupdate.TabIndex = 12;
             this.btnupdate.Text = "Update";
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
@@ -212,10 +204,9 @@ namespace APP1
             this.btndelete.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.ForeColor = System.Drawing.Color.White;
             this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
-            this.btndelete.Location = new System.Drawing.Point(1072, 415);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btndelete.Location = new System.Drawing.Point(715, 270);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(177, 46);
+            this.btndelete.Size = new System.Drawing.Size(118, 30);
             this.btndelete.TabIndex = 13;
             this.btndelete.Text = "Delete";
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
@@ -225,10 +216,9 @@ namespace APP1
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(531, 480);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(354, 312);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 36);
+            this.label7.Size = new System.Drawing.Size(96, 22);
             this.label7.TabIndex = 14;
             this.label7.Text = "All Rooms";
             // 
@@ -260,13 +250,12 @@ namespace APP1
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.dataGridView1.Location = new System.Drawing.Point(88, 538);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(59, 350);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(982, 209);
+            this.dataGridView1.Size = new System.Drawing.Size(655, 136);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -293,15 +282,14 @@ namespace APP1
             // btnExit
             // 
             this.btnExit.BorderRadius = 15;
-            this.btnExit.FillColor = System.Drawing.Color.White;
+            this.btnExit.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExit.Location = new System.Drawing.Point(1250, 18);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnExit.Location = new System.Drawing.Point(883, 10);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(60, 46);
+            this.btnExit.Size = new System.Drawing.Size(40, 30);
             this.btnExit.TabIndex = 16;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -312,10 +300,9 @@ namespace APP1
             this.btnsearch.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsearch.ForeColor = System.Drawing.Color.White;
             this.btnsearch.Image = ((System.Drawing.Image)(resources.GetObject("btnsearch.Image")));
-            this.btnsearch.Location = new System.Drawing.Point(537, 355);
-            this.btnsearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnsearch.Location = new System.Drawing.Point(358, 231);
             this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(177, 46);
+            this.btnsearch.Size = new System.Drawing.Size(118, 30);
             this.btnsearch.TabIndex = 17;
             this.btnsearch.Text = "Search";
             this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
@@ -325,10 +312,9 @@ namespace APP1
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(4, 212);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(3, 138);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 27);
+            this.label8.Size = new System.Drawing.Size(81, 20);
             this.label8.TabIndex = 18;
             this.label8.Text = "Total Beds";
             // 
@@ -341,10 +327,9 @@ namespace APP1
             this.CheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.CheckBox2.ForeColor = System.Drawing.Color.Black;
-            this.CheckBox2.Location = new System.Drawing.Point(1032, 358);
-            this.CheckBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CheckBox2.Location = new System.Drawing.Point(688, 233);
             this.CheckBox2.Name = "CheckBox2";
-            this.CheckBox2.Size = new System.Drawing.Size(63, 24);
+            this.CheckBox2.Size = new System.Drawing.Size(44, 17);
             this.CheckBox2.TabIndex = 20;
             this.CheckBox2.Text = "Yes";
             this.CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -359,10 +344,9 @@ namespace APP1
             this.btnaddroom.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnaddroom.ForeColor = System.Drawing.Color.White;
             this.btnaddroom.Image = ((System.Drawing.Image)(resources.GetObject("btnaddroom.Image")));
-            this.btnaddroom.Location = new System.Drawing.Point(951, 171);
-            this.btnaddroom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnaddroom.Location = new System.Drawing.Point(634, 111);
             this.btnaddroom.Name = "btnaddroom";
-            this.btnaddroom.Size = new System.Drawing.Size(177, 46);
+            this.btnaddroom.Size = new System.Drawing.Size(118, 30);
             this.btnaddroom.TabIndex = 21;
             this.btnaddroom.Text = "Add Room";
             this.btnaddroom.Click += new System.EventHandler(this.btnaddroom_Click);
@@ -372,10 +356,9 @@ namespace APP1
             this.labelroom1.AutoSize = true;
             this.labelroom1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelroom1.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.labelroom1.Location = new System.Drawing.Point(204, 169);
-            this.labelroom1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelroom1.Location = new System.Drawing.Point(136, 110);
             this.labelroom1.Name = "labelroom1";
-            this.labelroom1.Size = new System.Drawing.Size(92, 27);
+            this.labelroom1.Size = new System.Drawing.Size(61, 20);
             this.labelroom1.TabIndex = 22;
             this.labelroom1.Text = "set text";
             // 
@@ -384,10 +367,9 @@ namespace APP1
             this.labelroom2.AutoSize = true;
             this.labelroom2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelroom2.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.labelroom2.Location = new System.Drawing.Point(204, 409);
-            this.labelroom2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelroom2.Location = new System.Drawing.Point(136, 266);
             this.labelroom2.Name = "labelroom2";
-            this.labelroom2.Size = new System.Drawing.Size(92, 27);
+            this.labelroom2.Size = new System.Drawing.Size(61, 20);
             this.labelroom2.TabIndex = 23;
             this.labelroom2.Text = "set text";
             // 
@@ -403,21 +385,21 @@ namespace APP1
             this.txtbed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbed.ForeColor = System.Drawing.Color.Black;
             this.txtbed.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbed.Location = new System.Drawing.Point(210, 208);
-            this.txtbed.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtbed.Location = new System.Drawing.Point(140, 135);
+            this.txtbed.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbed.Name = "txtbed";
             this.txtbed.PasswordChar = '\0';
             this.txtbed.PlaceholderText = "";
             this.txtbed.SelectedText = "";
-            this.txtbed.Size = new System.Drawing.Size(300, 46);
+            this.txtbed.Size = new System.Drawing.Size(200, 30);
             this.txtbed.TabIndex = 24;
             // 
             // AddNewRoom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1393, 786);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ClientSize = new System.Drawing.Size(924, 511);
             this.Controls.Add(this.txtbed);
             this.Controls.Add(this.labelroom2);
             this.Controls.Add(this.labelroom1);
@@ -440,7 +422,6 @@ namespace APP1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AddNewRoom";
             this.Text = "AddNewRoom";
             this.Load += new System.EventHandler(this.AddNewRoom_Load);
