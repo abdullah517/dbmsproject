@@ -19,7 +19,7 @@ namespace APP1
 
         private void btnlogout_Click(object sender, EventArgs e)
         {
-            LogIn ls = new LogIn();
+            LogIn ls = new LogIn(false);
             ls.Show();
             this.Hide();
         }
@@ -53,6 +53,30 @@ namespace APP1
         {
             NewStudent ns = new NewStudent();
             ns.Show();
+        }
+
+        private void btnFees_Click(object sender, EventArgs e)
+        {
+            StudentFees sf = new StudentFees();
+            sf.Show();
+        }
+
+        private void btnUpdateDeleteStudent_Click(object sender, EventArgs e)
+        {
+            UpdateDeleteStudent uds = new UpdateDeleteStudent();
+            uds.Show();
+        }
+
+        private void btnAllStudents_Click(object sender, EventArgs e)
+        {
+            AllStudentsLiving asl = new AllStudentsLiving();
+            asl.Show();
+        }
+
+        private void btnleavedStudents_Click(object sender, EventArgs e)
+        {
+            LeavedStudents ls = new LeavedStudents();
+            ls.Show();
         }
     }
 }

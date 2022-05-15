@@ -36,10 +36,10 @@ namespace APP1
             this.hmslabel = new System.Windows.Forms.Label();
             this.btnmanageroom = new Guna.UI2.WinForms.Guna2Button();
             this.new_stu_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUpdateDeleteStudent = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFees = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAllStudents = new Guna.UI2.WinForms.Guna2Button();
+            this.btnleavedStudents = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
@@ -82,7 +82,7 @@ namespace APP1
             this.hmslabel.AutoSize = true;
             this.hmslabel.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmslabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.hmslabel.Location = new System.Drawing.Point(533, 7);
+            this.hmslabel.Location = new System.Drawing.Point(524, 7);
             this.hmslabel.Name = "hmslabel";
             this.hmslabel.Size = new System.Drawing.Size(518, 44);
             this.hmslabel.TabIndex = 2;
@@ -124,73 +124,77 @@ namespace APP1
             this.new_stu_btn.Text = "New Student";
             this.new_stu_btn.Click += new System.EventHandler(this.new_stu_btn_Click);
             // 
-            // guna2Button3
+            // btnUpdateDeleteStudent
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.White;
-            this.guna2Button3.BorderRadius = 19;
-            this.guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button3.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(48)))), ((int)(((byte)(103)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.Location = new System.Drawing.Point(12, 196);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(211, 40);
-            this.guna2Button3.TabIndex = 5;
-            this.guna2Button3.Text = "Update & Delete Students";
+            this.btnUpdateDeleteStudent.BackColor = System.Drawing.Color.White;
+            this.btnUpdateDeleteStudent.BorderRadius = 19;
+            this.btnUpdateDeleteStudent.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnUpdateDeleteStudent.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnUpdateDeleteStudent.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(48)))), ((int)(((byte)(103)))));
+            this.btnUpdateDeleteStudent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnUpdateDeleteStudent.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateDeleteStudent.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateDeleteStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateDeleteStudent.Image")));
+            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(12, 196);
+            this.btnUpdateDeleteStudent.Name = "btnUpdateDeleteStudent";
+            this.btnUpdateDeleteStudent.Size = new System.Drawing.Size(211, 40);
+            this.btnUpdateDeleteStudent.TabIndex = 5;
+            this.btnUpdateDeleteStudent.Text = "Update & Delete Students";
+            this.btnUpdateDeleteStudent.Click += new System.EventHandler(this.btnUpdateDeleteStudent_Click);
             // 
-            // guna2Button4
+            // btnFees
             // 
-            this.guna2Button4.BackColor = System.Drawing.Color.White;
-            this.guna2Button4.BorderRadius = 19;
-            this.guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button4.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button4.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(48)))), ((int)(((byte)(103)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.Location = new System.Drawing.Point(12, 254);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(211, 40);
-            this.guna2Button4.TabIndex = 6;
-            this.guna2Button4.Text = "Student Fees";
+            this.btnFees.BackColor = System.Drawing.Color.White;
+            this.btnFees.BorderRadius = 19;
+            this.btnFees.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnFees.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnFees.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(48)))), ((int)(((byte)(103)))));
+            this.btnFees.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnFees.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFees.ForeColor = System.Drawing.Color.White;
+            this.btnFees.Image = ((System.Drawing.Image)(resources.GetObject("btnFees.Image")));
+            this.btnFees.Location = new System.Drawing.Point(12, 254);
+            this.btnFees.Name = "btnFees";
+            this.btnFees.Size = new System.Drawing.Size(211, 40);
+            this.btnFees.TabIndex = 6;
+            this.btnFees.Text = "Student Fees";
+            this.btnFees.Click += new System.EventHandler(this.btnFees_Click);
             // 
-            // guna2Button5
+            // btnAllStudents
             // 
-            this.guna2Button5.BackColor = System.Drawing.Color.White;
-            this.guna2Button5.BorderRadius = 19;
-            this.guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button5.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button5.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(48)))), ((int)(((byte)(103)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
-            this.guna2Button5.Location = new System.Drawing.Point(12, 312);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(211, 40);
-            this.guna2Button5.TabIndex = 7;
-            this.guna2Button5.Text = "All Students Living";
+            this.btnAllStudents.BackColor = System.Drawing.Color.White;
+            this.btnAllStudents.BorderRadius = 19;
+            this.btnAllStudents.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnAllStudents.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnAllStudents.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(48)))), ((int)(((byte)(103)))));
+            this.btnAllStudents.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnAllStudents.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAllStudents.ForeColor = System.Drawing.Color.White;
+            this.btnAllStudents.Image = ((System.Drawing.Image)(resources.GetObject("btnAllStudents.Image")));
+            this.btnAllStudents.Location = new System.Drawing.Point(12, 312);
+            this.btnAllStudents.Name = "btnAllStudents";
+            this.btnAllStudents.Size = new System.Drawing.Size(211, 40);
+            this.btnAllStudents.TabIndex = 7;
+            this.btnAllStudents.Text = "All Students Living";
+            this.btnAllStudents.Click += new System.EventHandler(this.btnAllStudents_Click);
             // 
-            // guna2Button6
+            // btnleavedStudents
             // 
-            this.guna2Button6.BackColor = System.Drawing.Color.White;
-            this.guna2Button6.BorderRadius = 19;
-            this.guna2Button6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button6.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button6.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(48)))), ((int)(((byte)(103)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
-            this.guna2Button6.Location = new System.Drawing.Point(12, 374);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(211, 40);
-            this.guna2Button6.TabIndex = 8;
-            this.guna2Button6.Text = "Leaved Students";
+            this.btnleavedStudents.BackColor = System.Drawing.Color.White;
+            this.btnleavedStudents.BorderRadius = 19;
+            this.btnleavedStudents.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnleavedStudents.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnleavedStudents.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(48)))), ((int)(((byte)(103)))));
+            this.btnleavedStudents.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnleavedStudents.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnleavedStudents.ForeColor = System.Drawing.Color.White;
+            this.btnleavedStudents.Image = ((System.Drawing.Image)(resources.GetObject("btnleavedStudents.Image")));
+            this.btnleavedStudents.Location = new System.Drawing.Point(12, 374);
+            this.btnleavedStudents.Name = "btnleavedStudents";
+            this.btnleavedStudents.Size = new System.Drawing.Size(211, 40);
+            this.btnleavedStudents.TabIndex = 8;
+            this.btnleavedStudents.Text = "Leaved Students";
+            this.btnleavedStudents.Click += new System.EventHandler(this.btnleavedStudents_Click);
             // 
             // guna2Button7
             // 
@@ -330,10 +334,10 @@ namespace APP1
             this.Controls.Add(this.guna2Button9);
             this.Controls.Add(this.guna2Button8);
             this.Controls.Add(this.guna2Button7);
-            this.Controls.Add(this.guna2Button6);
-            this.Controls.Add(this.guna2Button5);
-            this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.btnleavedStudents);
+            this.Controls.Add(this.btnAllStudents);
+            this.Controls.Add(this.btnFees);
+            this.Controls.Add(this.btnUpdateDeleteStudent);
             this.Controls.Add(this.new_stu_btn);
             this.Controls.Add(this.btnmanageroom);
             this.Controls.Add(this.hmslabel);
@@ -355,10 +359,10 @@ namespace APP1
         private System.Windows.Forms.Label hmslabel;
         private Guna.UI2.WinForms.Guna2Button btnmanageroom;
         private Guna.UI2.WinForms.Guna2Button new_stu_btn;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btnUpdateDeleteStudent;
+        private Guna.UI2.WinForms.Guna2Button btnFees;
+        private Guna.UI2.WinForms.Guna2Button btnAllStudents;
+        private Guna.UI2.WinForms.Guna2Button btnleavedStudents;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;

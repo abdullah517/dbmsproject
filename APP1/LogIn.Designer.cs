@@ -35,10 +35,10 @@ namespace APP1
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnsignin = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linksignup = new System.Windows.Forms.LinkLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.linkforget = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -126,17 +126,6 @@ namespace APP1
             this.btnsignin.Text = "SIGN IN";
             this.btnsignin.Click += new System.EventHandler(this.btnsignin_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(70, 333);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 16);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Forget Password?";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -148,22 +137,36 @@ namespace APP1
             this.label4.TabIndex = 6;
             this.label4.Text = "Don\'t have an account yet";
             // 
-            // linkLabel1
+            // linksignup
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(272, 333);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(51, 15);
-            this.linkLabel1.TabIndex = 7;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Sign Up";
+            this.linksignup.AutoSize = true;
+            this.linksignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linksignup.LinkColor = System.Drawing.Color.White;
+            this.linksignup.Location = new System.Drawing.Point(272, 333);
+            this.linksignup.Name = "linksignup";
+            this.linksignup.Size = new System.Drawing.Size(51, 15);
+            this.linksignup.TabIndex = 7;
+            this.linksignup.TabStop = true;
+            this.linksignup.Text = "Sign Up";
+            this.linksignup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linksignup_LinkClicked);
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
+            // 
+            // linkforget
+            // 
+            this.linkforget.AutoSize = true;
+            this.linkforget.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkforget.LinkColor = System.Drawing.Color.White;
+            this.linkforget.Location = new System.Drawing.Point(46, 332);
+            this.linkforget.Name = "linkforget";
+            this.linkforget.Size = new System.Drawing.Size(106, 15);
+            this.linkforget.TabIndex = 8;
+            this.linkforget.TabStop = true;
+            this.linkforget.Text = "Forget Password?";
+            this.linkforget.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkforget_LinkClicked);
             // 
             // LogIn
             // 
@@ -171,9 +174,9 @@ namespace APP1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             this.ClientSize = new System.Drawing.Size(382, 390);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkforget);
+            this.Controls.Add(this.linksignup);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnsignin);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtusername);
@@ -195,10 +198,10 @@ namespace APP1
         private Guna.UI2.WinForms.Guna2TextBox txtusername;
         private Guna.UI2.WinForms.Guna2TextBox txtpassword;
         private Guna.UI2.WinForms.Guna2Button btnsignin;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linksignup;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.LinkLabel linkforget;
     }
 }
 

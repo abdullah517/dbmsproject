@@ -45,3 +45,10 @@ C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.csproj.CopyComplete
 C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.exe
 C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.pdb
 C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.Dashboard.resources
+C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.StudentFees.resources
+C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.UpdateDeleteStudent.resources
+C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.AllStudentsLiving.resources
+C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.LeavedStudents.resources
+C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.splashscreen.resources
+C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.SignUp.resources
+C:\Users\hls\Desktop\pro\dbmsproject\APP1\obj\Debug\APP1.SendCode.resources

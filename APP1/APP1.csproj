@@ -61,19 +61,31 @@
     <Compile Include="AddNewRoom.Designer.cs">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllStudentsLiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStudentsLiving.Designer.cs">
+      <DependentUpon>AllStudentsLiving.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="function.cs" />
+    <Compile Include="LeavedStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeavedStudents.Designer.cs">
+      <DependentUpon>LeavedStudents.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,14 +94,56 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendCode.Designer.cs">
+      <DependentUpon>SendCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashscreen.Designer.cs">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFees.Designer.cs">
+      <DependentUpon>StudentFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDeleteStudent.Designer.cs">
+      <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddNewRoom.resx">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStudentsLiving.resx">
+      <DependentUpon>AllStudentsLiving.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeavedStudents.resx">
+      <DependentUpon>LeavedStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewStudent.resx">
       <DependentUpon>NewStudent.cs</DependentUpon>
@@ -103,6 +157,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendCode.resx">
+      <DependentUpon>SendCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashscreen.resx">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFees.resx">
+      <DependentUpon>StudentFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDeleteStudent.resx">
+      <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
