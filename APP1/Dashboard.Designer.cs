@@ -57,7 +57,7 @@ namespace APP1
             this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(246, 68);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(246, 66);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(1107, 692);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,7 +71,7 @@ namespace APP1
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 18);
+            this.label1.Location = new System.Drawing.Point(24, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 35);
             this.label1.TabIndex = 1;
@@ -82,7 +82,7 @@ namespace APP1
             this.hmslabel.AutoSize = true;
             this.hmslabel.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmslabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.hmslabel.Location = new System.Drawing.Point(524, 7);
+            this.hmslabel.Location = new System.Drawing.Point(524, 6);
             this.hmslabel.Name = "hmslabel";
             this.hmslabel.Size = new System.Drawing.Size(518, 44);
             this.hmslabel.TabIndex = 2;
@@ -99,7 +99,7 @@ namespace APP1
             this.btnmanageroom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmanageroom.ForeColor = System.Drawing.Color.White;
             this.btnmanageroom.Image = ((System.Drawing.Image)(resources.GetObject("btnmanageroom.Image")));
-            this.btnmanageroom.Location = new System.Drawing.Point(12, 74);
+            this.btnmanageroom.Location = new System.Drawing.Point(12, 72);
             this.btnmanageroom.Name = "btnmanageroom";
             this.btnmanageroom.Size = new System.Drawing.Size(211, 40);
             this.btnmanageroom.TabIndex = 3;
@@ -117,7 +117,7 @@ namespace APP1
             this.new_stu_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.new_stu_btn.ForeColor = System.Drawing.Color.White;
             this.new_stu_btn.Image = ((System.Drawing.Image)(resources.GetObject("new_stu_btn.Image")));
-            this.new_stu_btn.Location = new System.Drawing.Point(12, 131);
+            this.new_stu_btn.Location = new System.Drawing.Point(12, 129);
             this.new_stu_btn.Name = "new_stu_btn";
             this.new_stu_btn.Size = new System.Drawing.Size(211, 40);
             this.new_stu_btn.TabIndex = 4;
@@ -135,7 +135,7 @@ namespace APP1
             this.btnUpdateDeleteStudent.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateDeleteStudent.ForeColor = System.Drawing.Color.White;
             this.btnUpdateDeleteStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateDeleteStudent.Image")));
-            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(12, 190);
+            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(12, 188);
             this.btnUpdateDeleteStudent.Name = "btnUpdateDeleteStudent";
             this.btnUpdateDeleteStudent.Size = new System.Drawing.Size(211, 40);
             this.btnUpdateDeleteStudent.TabIndex = 5;
@@ -153,7 +153,7 @@ namespace APP1
             this.btnFees.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFees.ForeColor = System.Drawing.Color.White;
             this.btnFees.Image = ((System.Drawing.Image)(resources.GetObject("btnFees.Image")));
-            this.btnFees.Location = new System.Drawing.Point(12, 248);
+            this.btnFees.Location = new System.Drawing.Point(12, 246);
             this.btnFees.Name = "btnFees";
             this.btnFees.Size = new System.Drawing.Size(211, 40);
             this.btnFees.TabIndex = 6;
@@ -171,7 +171,7 @@ namespace APP1
             this.btnAllStudents.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllStudents.ForeColor = System.Drawing.Color.White;
             this.btnAllStudents.Image = ((System.Drawing.Image)(resources.GetObject("btnAllStudents.Image")));
-            this.btnAllStudents.Location = new System.Drawing.Point(12, 305);
+            this.btnAllStudents.Location = new System.Drawing.Point(12, 303);
             this.btnAllStudents.Name = "btnAllStudents";
             this.btnAllStudents.Size = new System.Drawing.Size(211, 40);
             this.btnAllStudents.TabIndex = 7;
@@ -189,7 +189,7 @@ namespace APP1
             this.btnleavedStudents.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnleavedStudents.ForeColor = System.Drawing.Color.White;
             this.btnleavedStudents.Image = ((System.Drawing.Image)(resources.GetObject("btnleavedStudents.Image")));
-            this.btnleavedStudents.Location = new System.Drawing.Point(12, 367);
+            this.btnleavedStudents.Location = new System.Drawing.Point(12, 365);
             this.btnleavedStudents.Name = "btnleavedStudents";
             this.btnleavedStudents.Size = new System.Drawing.Size(211, 40);
             this.btnleavedStudents.TabIndex = 8;
@@ -207,7 +207,7 @@ namespace APP1
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
-            this.guna2Button7.Location = new System.Drawing.Point(12, 426);
+            this.guna2Button7.Location = new System.Drawing.Point(12, 424);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.Size = new System.Drawing.Size(211, 40);
             this.guna2Button7.TabIndex = 9;
@@ -224,7 +224,7 @@ namespace APP1
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
             this.guna2Button8.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.Image")));
-            this.guna2Button8.Location = new System.Drawing.Point(12, 487);
+            this.guna2Button8.Location = new System.Drawing.Point(12, 485);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.Size = new System.Drawing.Size(211, 40);
             this.guna2Button8.TabIndex = 10;
@@ -241,7 +241,7 @@ namespace APP1
             this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button9.ForeColor = System.Drawing.Color.White;
             this.guna2Button9.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button9.Image")));
-            this.guna2Button9.Location = new System.Drawing.Point(12, 546);
+            this.guna2Button9.Location = new System.Drawing.Point(12, 544);
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.Size = new System.Drawing.Size(211, 40);
             this.guna2Button9.TabIndex = 11;
@@ -258,7 +258,7 @@ namespace APP1
             this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button10.ForeColor = System.Drawing.Color.White;
             this.guna2Button10.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button10.Image")));
-            this.guna2Button10.Location = new System.Drawing.Point(12, 605);
+            this.guna2Button10.Location = new System.Drawing.Point(12, 603);
             this.guna2Button10.Name = "guna2Button10";
             this.guna2Button10.Size = new System.Drawing.Size(211, 40);
             this.guna2Button10.TabIndex = 12;
@@ -275,7 +275,7 @@ namespace APP1
             this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button11.ForeColor = System.Drawing.Color.White;
             this.guna2Button11.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button11.Image")));
-            this.guna2Button11.Location = new System.Drawing.Point(12, 665);
+            this.guna2Button11.Location = new System.Drawing.Point(12, 663);
             this.guna2Button11.Name = "guna2Button11";
             this.guna2Button11.Size = new System.Drawing.Size(211, 40);
             this.guna2Button11.TabIndex = 13;
@@ -315,7 +315,7 @@ namespace APP1
             this.btnlogout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogout.ForeColor = System.Drawing.Color.White;
             this.btnlogout.Image = ((System.Drawing.Image)(resources.GetObject("btnlogout.Image")));
-            this.btnlogout.Location = new System.Drawing.Point(12, 722);
+            this.btnlogout.Location = new System.Drawing.Point(12, 720);
             this.btnlogout.Name = "btnlogout";
             this.btnlogout.Size = new System.Drawing.Size(211, 40);
             this.btnlogout.TabIndex = 16;

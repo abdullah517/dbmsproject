@@ -39,6 +39,7 @@ namespace APP1
             this.linksignup = new System.Windows.Forms.LinkLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.linkforget = new System.Windows.Forms.LinkLabel();
+            this.CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -119,7 +120,7 @@ namespace APP1
             this.btnsignin.HoverState.BorderColor = System.Drawing.Color.White;
             this.btnsignin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             this.btnsignin.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnsignin.Location = new System.Drawing.Point(103, 263);
+            this.btnsignin.Location = new System.Drawing.Point(103, 281);
             this.btnsignin.Name = "btnsignin";
             this.btnsignin.Size = new System.Drawing.Size(171, 45);
             this.btnsignin.TabIndex = 4;
@@ -131,7 +132,7 @@ namespace APP1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(155, 333);
+            this.label4.Location = new System.Drawing.Point(155, 337);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 16);
             this.label4.TabIndex = 6;
@@ -142,7 +143,7 @@ namespace APP1
             this.linksignup.AutoSize = true;
             this.linksignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linksignup.LinkColor = System.Drawing.Color.White;
-            this.linksignup.Location = new System.Drawing.Point(272, 333);
+            this.linksignup.Location = new System.Drawing.Point(272, 337);
             this.linksignup.Name = "linksignup";
             this.linksignup.Size = new System.Drawing.Size(51, 15);
             this.linksignup.TabIndex = 7;
@@ -160,7 +161,7 @@ namespace APP1
             this.linkforget.AutoSize = true;
             this.linkforget.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkforget.LinkColor = System.Drawing.Color.White;
-            this.linkforget.Location = new System.Drawing.Point(46, 332);
+            this.linkforget.Location = new System.Drawing.Point(46, 336);
             this.linkforget.Name = "linkforget";
             this.linkforget.Size = new System.Drawing.Size(106, 15);
             this.linkforget.TabIndex = 8;
@@ -168,12 +169,31 @@ namespace APP1
             this.linkforget.Text = "Forget Password?";
             this.linkforget.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkforget_LinkClicked);
             // 
+            // CheckBox1
+            // 
+            this.CheckBox1.AutoSize = true;
+            this.CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CheckBox1.CheckedState.BorderRadius = 0;
+            this.CheckBox1.CheckedState.BorderThickness = 0;
+            this.CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CheckBox1.Location = new System.Drawing.Point(208, 256);
+            this.CheckBox1.Name = "CheckBox1";
+            this.CheckBox1.Size = new System.Drawing.Size(102, 17);
+            this.CheckBox1.TabIndex = 9;
+            this.CheckBox1.Text = "Show Password";
+            this.CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.CheckBox1.UncheckedState.BorderRadius = 0;
+            this.CheckBox1.UncheckedState.BorderThickness = 0;
+            this.CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.CheckBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             this.ClientSize = new System.Drawing.Size(382, 390);
+            this.Controls.Add(this.CheckBox1);
             this.Controls.Add(this.linkforget);
             this.Controls.Add(this.linksignup);
             this.Controls.Add(this.label4);
@@ -203,6 +223,7 @@ namespace APP1
         private System.Windows.Forms.LinkLabel linksignup;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.LinkLabel linkforget;
+        private Guna.UI2.WinForms.Guna2CheckBox CheckBox1;
     }
 }
 

@@ -13,6 +13,8 @@ namespace APP1
 {
     public partial class LogIn : Form
     {
+        function fs = new function();
+        string query;
         public LogIn(bool chk = true)
         {
             if (chk == true)
@@ -35,16 +37,25 @@ namespace APP1
 
         private void btnsignin_Click(object sender, EventArgs e)
         {
-            if (txtusername.Text == "abcd" && txtpassword.Text == "1234")
+            
+            if (txtusername.Text != "" && txtpassword.Text != "")
             {
-                this.Hide();
-                Dashboard ds = new Dashboard();
-                ds.Show();
+                query = "select*from appuser where email='" + txtusername.Text + "'and pass='" + txtpassword.Text + "'";
+                DataSet ds = fs.GetData(query);
+                if (ds.Tables[0].Rows.Count != 0)
+                {
+                    this.Hide();
+                    Dashboard Ds = new Dashboard();
+                    Ds.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Please enter valid details", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtpassword.Clear();
+                }
             }
-            else if (txtusername.Text == "" || txtpassword.Text == "")
-                MessageBox.Show("Please fill both fields","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             else
-                MessageBox.Show("Please enter valid details","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Please fill both fields","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
         }
 
         private void linksignup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -59,6 +70,15 @@ namespace APP1
             this.Hide();
             SendCode sc = new SendCode();
             sc.Show();
+        }
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            bool check = CheckBox1.Checked;
+            if (check == true)
+                txtpassword.PasswordChar = '\0';
+            else
+                txtpassword.PasswordChar = '*';
         }
     }
 }
