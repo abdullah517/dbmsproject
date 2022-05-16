@@ -19,7 +19,7 @@ namespace APP1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            progressBar1.Increment(1);
+            progressBar1.Increment(10);
             label3.Text = progressBar1.Value.ToString() + "%";
             if (progressBar1.Value == 100)
                 timer1.Stop();

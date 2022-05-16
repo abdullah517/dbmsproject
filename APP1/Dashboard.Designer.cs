@@ -323,10 +323,11 @@ namespace APP1
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1386, 768);
+            this.ClientSize = new System.Drawing.Size(1376, 768);
             this.Controls.Add(this.btnexit);
             this.Controls.Add(this.btnlogout);
             this.Controls.Add(this.guna2Button11);
