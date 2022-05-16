@@ -17,13 +17,6 @@ namespace APP1
             InitializeComponent();
         }
 
-        private void btnlogout_Click(object sender, EventArgs e)
-        {
-            LogIn ls = new LogIn(false);
-            ls.Show();
-            this.Hide();
-        }
-
         private void btnexit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -77,6 +70,13 @@ namespace APP1
         {
             LeavedStudents ls = new LeavedStudents();
             ls.Show();
+        }
+
+        private void btnlogout_Click_1(object sender, EventArgs e)
+        {
+            LogIn ls = new LogIn(false);
+            ls.Show();
+            this.Hide();
         }
     }
 }

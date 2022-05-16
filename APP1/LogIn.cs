@@ -19,7 +19,7 @@ namespace APP1
             {
                 Thread t = new Thread(new ThreadStart(splashstart));
                 t.Start();
-                Thread.Sleep(3500);
+                Thread.Sleep(3000);
                 InitializeComponent();
                 t.Abort();
             }
