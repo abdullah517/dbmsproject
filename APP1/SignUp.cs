@@ -29,6 +29,12 @@ namespace APP1
             li.Show();
         }
 
+        private void clearall()
+        {
+            txtcfmpass.Text = txtemail.Text = txtfullname.Text = txtid.Text =
+                txtpass.Text = "";
+        }
+
         private void txtfullname_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
@@ -49,6 +55,34 @@ namespace APP1
                 e.Handled = false;
             else
                 e.Handled = true;
+        }
+
+        private bool checkemailexistance()
+        {
+            query = "select*from appuser where email='" + txtemail.Text + "'";
+            DataSet ds = fs.GetData(query);
+            if (ds.Tables[0].Rows.Count != 0)
+                return true;
+            else
+            {
+                label4.Visible = false;
+                return false;
+            }                                                 
+        }
+
+        private bool checkcnicexistance()
+        {
+            Int64 uid = Int64.Parse(txtid.Text);
+            query = "select*from appuser where id="+uid+"";
+            DataSet ds = fs.GetData(query);
+            if (ds.Tables[0].Rows.Count != 0)
+                return true;
+            else
+            {
+                label5.Visible = false;
+                return false;
+            }
+               
         }
 
         private bool checkvalidemail()
@@ -104,8 +138,8 @@ namespace APP1
         private void btnregister_Click(object sender, EventArgs e)
         {
             if (checkempty())
-             MessageBox.Show("Please fill all the fields", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-          else if (checkvalidemail())
+                MessageBox.Show("Please fill all the fields", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else if (checkvalidemail())
             {
                 txtemail.Focus();
                 errorProvider1.SetError(this.txtemail, "Please enter valid email");
@@ -122,6 +156,12 @@ namespace APP1
                 errorProvider3.SetError(this.txtpass, "Please enter strong password including uppercase,lowercase,numbers and special characters");
             }
 
+            else if (checkemailexistance())
+                label4.Visible = true;
+            else if (checkcnicexistance())
+            {
+                label5.Visible = true;
+            }
             else if (chkcfmpass())
             {
                 label3.Visible = true;
@@ -132,6 +172,7 @@ namespace APP1
                 Int64 Id = Int64.Parse(txtid.Text);
                 query = "insert into appuser(fullname,email,pass,id)values('" + txtfullname.Text + "','" + txtemail.Text + "','" + txtpass.Text + "'," + Id + ")";
                 fs.setdata(query, "Registered Successfully.");
+                clearall();
             }
         }
     }

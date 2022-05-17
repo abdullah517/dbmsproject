@@ -43,6 +43,8 @@ namespace APP1
             this.label3 = new System.Windows.Forms.Label();
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
@@ -92,7 +94,7 @@ namespace APP1
             this.txtemail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtemail.ForeColor = System.Drawing.Color.Black;
             this.txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtemail.Location = new System.Drawing.Point(30, 186);
+            this.txtemail.Location = new System.Drawing.Point(30, 195);
             this.txtemail.Name = "txtemail";
             this.txtemail.PasswordChar = '\0';
             this.txtemail.PlaceholderText = "Enter your Email";
@@ -112,7 +114,7 @@ namespace APP1
             this.txtpass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtpass.ForeColor = System.Drawing.Color.Black;
             this.txtpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtpass.Location = new System.Drawing.Point(34, 244);
+            this.txtpass.Location = new System.Drawing.Point(34, 258);
             this.txtpass.Name = "txtpass";
             this.txtpass.PasswordChar = '\0';
             this.txtpass.PlaceholderText = "Create Password";
@@ -132,7 +134,7 @@ namespace APP1
             this.txtcfmpass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtcfmpass.ForeColor = System.Drawing.Color.Black;
             this.txtcfmpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtcfmpass.Location = new System.Drawing.Point(34, 303);
+            this.txtcfmpass.Location = new System.Drawing.Point(34, 315);
             this.txtcfmpass.Name = "txtcfmpass";
             this.txtcfmpass.PasswordChar = '\0';
             this.txtcfmpass.PlaceholderText = "Confirm password";
@@ -145,7 +147,7 @@ namespace APP1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(76, 433);
+            this.label2.Location = new System.Drawing.Point(76, 438);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(163, 16);
             this.label2.TabIndex = 6;
@@ -156,7 +158,7 @@ namespace APP1
             this.linksignin.AutoSize = true;
             this.linksignin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linksignin.LinkColor = System.Drawing.Color.White;
-            this.linksignin.Location = new System.Drawing.Point(238, 432);
+            this.linksignin.Location = new System.Drawing.Point(238, 437);
             this.linksignin.Name = "linksignin";
             this.linksignin.Size = new System.Drawing.Size(45, 16);
             this.linksignin.TabIndex = 7;
@@ -174,7 +176,7 @@ namespace APP1
             this.btnregister.HoverState.BorderColor = System.Drawing.Color.White;
             this.btnregister.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             this.btnregister.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnregister.Location = new System.Drawing.Point(93, 374);
+            this.btnregister.Location = new System.Drawing.Point(94, 382);
             this.btnregister.Name = "btnregister";
             this.btnregister.Size = new System.Drawing.Size(171, 45);
             this.btnregister.TabIndex = 8;
@@ -211,7 +213,7 @@ namespace APP1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(34, 349);
+            this.label3.Location = new System.Drawing.Point(34, 357);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 16);
             this.label3.TabIndex = 10;
@@ -226,12 +228,36 @@ namespace APP1
             // 
             this.errorProvider3.ContainerControl = this;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(27, 234);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 16);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Email already exists";
+            this.label4.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(28, 171);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(152, 16);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "CNIC already registered";
+            this.label5.Visible = false;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.ClientSize = new System.Drawing.Size(376, 475);
+            this.ClientSize = new System.Drawing.Size(376, 478);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.btnregister);
@@ -270,5 +296,7 @@ namespace APP1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }
