@@ -66,14 +66,15 @@ namespace APP1
             // hmslabel
             // 
             this.hmslabel.AutoSize = true;
-            this.hmslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hmslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmslabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.hmslabel.Location = new System.Drawing.Point(121, 18);
+            this.hmslabel.Location = new System.Drawing.Point(338, 37);
             this.hmslabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hmslabel.Name = "hmslabel";
-            this.hmslabel.Size = new System.Drawing.Size(938, 82);
+            this.hmslabel.Size = new System.Drawing.Size(628, 55);
             this.hmslabel.TabIndex = 2;
             this.hmslabel.Text = "Hostel Management System";
+            this.hmslabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnmanageroom
             // 
@@ -191,7 +192,7 @@ namespace APP1
             this.guna2Button7.Location = new System.Drawing.Point(13, 473);
             this.guna2Button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(215, 49);
+            this.guna2Button7.Size = new System.Drawing.Size(210, 48);
             this.guna2Button7.TabIndex = 9;
             this.guna2Button7.Text = "New Employee";
             // 
@@ -205,10 +206,10 @@ namespace APP1
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
             this.guna2Button8.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.Image")));
-            this.guna2Button8.Location = new System.Drawing.Point(18, 760);
+            this.guna2Button8.Location = new System.Drawing.Point(18, 590);
             this.guna2Button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(316, 62);
+            this.guna2Button8.Size = new System.Drawing.Size(210, 48);
             this.guna2Button8.TabIndex = 10;
             this.guna2Button8.Text = "Update & Delete Employee";
             // 
@@ -222,10 +223,10 @@ namespace APP1
             this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button9.ForeColor = System.Drawing.Color.White;
             this.guna2Button9.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button9.Image")));
-            this.guna2Button9.Location = new System.Drawing.Point(18, 851);
+            this.guna2Button9.Location = new System.Drawing.Point(18, 648);
             this.guna2Button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(316, 62);
+            this.guna2Button9.Size = new System.Drawing.Size(210, 48);
             this.guna2Button9.TabIndex = 11;
             this.guna2Button9.Text = "Employee Payment";
             // 
@@ -239,10 +240,10 @@ namespace APP1
             this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button10.ForeColor = System.Drawing.Color.White;
             this.guna2Button10.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button10.Image")));
-            this.guna2Button10.Location = new System.Drawing.Point(18, 942);
+            this.guna2Button10.Location = new System.Drawing.Point(18, 706);
             this.guna2Button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.Size = new System.Drawing.Size(316, 62);
+            this.guna2Button10.Size = new System.Drawing.Size(210, 48);
             this.guna2Button10.TabIndex = 12;
             this.guna2Button10.Text = "All Employee Working";
             // 
@@ -256,10 +257,10 @@ namespace APP1
             this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button11.ForeColor = System.Drawing.Color.White;
             this.guna2Button11.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button11.Image")));
-            this.guna2Button11.Location = new System.Drawing.Point(18, 1035);
+            this.guna2Button11.Location = new System.Drawing.Point(16, 532);
             this.guna2Button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.Size = new System.Drawing.Size(316, 62);
+            this.guna2Button11.Size = new System.Drawing.Size(210, 48);
             this.guna2Button11.TabIndex = 13;
             this.guna2Button11.Text = "Leaved Employees";
             // 
@@ -275,10 +276,10 @@ namespace APP1
             this.btnlogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnlogout.Image = ((System.Drawing.Image)(resources.GetObject("btnlogout.Image")));
             this.btnlogout.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnlogout.Location = new System.Drawing.Point(1706, 29);
+            this.btnlogout.Location = new System.Drawing.Point(786, 694);
             this.btnlogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Size = new System.Drawing.Size(213, 69);
+            this.btnlogout.Size = new System.Drawing.Size(210, 48);
             this.btnlogout.TabIndex = 14;
             this.btnlogout.Text = "LogOut";
             this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
@@ -311,7 +312,7 @@ namespace APP1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1092, 734);
+            this.ClientSize = new System.Drawing.Size(1045, 768);
             this.Controls.Add(this.btnexit);
             this.Controls.Add(this.btnlogout);
             this.Controls.Add(this.guna2Button11);
