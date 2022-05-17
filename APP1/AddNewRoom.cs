@@ -112,5 +112,27 @@ namespace APP1
                 MessageBox.Show("Trying to delete which doesn't exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtroomno1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (char.IsDigit(ch) == true)
+                e.Handled = false;
+            else if (ch == 8)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void txtroomno2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (char.IsDigit(ch) == true)
+                e.Handled = false;
+            else if (ch == 8)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
     }
 }

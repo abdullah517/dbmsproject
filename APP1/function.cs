@@ -14,7 +14,7 @@ namespace APP1
         protected SqlConnection getconnection()
         {
             SqlConnection cnn = new SqlConnection();
-            cnn.ConnectionString = "data source =DESKTOP-H410BET;database=hostel;integrated security=True";
+            cnn.ConnectionString = "Data source =DESKTOP-OPJPDI0;database=hostel;integrated security=true";
             return cnn;
         }
 
