@@ -76,3 +76,11 @@ C:\Users\hls\Desktop\databse\dbmsproject\APP1\obj\Debug\APP1.csproj.CoreCompileI
 C:\Users\hls\Desktop\databse\dbmsproject\APP1\obj\Debug\APP1.csproj.CopyComplete
 C:\Users\hls\Desktop\databse\dbmsproject\APP1\obj\Debug\APP1.exe
 C:\Users\hls\Desktop\databse\dbmsproject\APP1\obj\Debug\APP1.pdb
+D:\C# project\dbmsproject\APP1\obj\Debug\APP1.AllStudentsLiving.resources
+D:\C# project\dbmsproject\APP1\obj\Debug\APP1.LeavedStudents.resources
+D:\C# project\dbmsproject\APP1\obj\Debug\APP1.ResetPassword.resources
+D:\C# project\dbmsproject\APP1\obj\Debug\APP1.SendCode.resources
+D:\C# project\dbmsproject\APP1\obj\Debug\APP1.SignUp.resources
+D:\C# project\dbmsproject\APP1\obj\Debug\APP1.splashscreen.resources
+D:\C# project\dbmsproject\APP1\obj\Debug\APP1.StudentFees.resources
+D:\C# project\dbmsproject\APP1\obj\Debug\APP1.UpdateDeleteStudent.resources

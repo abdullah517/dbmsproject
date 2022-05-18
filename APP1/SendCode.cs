@@ -47,13 +47,13 @@ namespace APP1
             randomcode = (rand.Next(999999)).ToString();
             MailMessage message = new MailMessage();
             to = txtemail.Text;
-            from = "abdullahshahzad089@gmail.com";
-            pass = "Bamsi123@";
+            from = "codereset1@outlook.com";
+            pass = "%?7R92DnesEfP)Y";
             message.To.Add(to);
             message.From = new MailAddress(from);
             message.Body = "Your reset code is " + randomcode;
             message.Subject = "Password Reset Code";
-            SmtpClient client = new SmtpClient("smtp.gmail.com");
+            SmtpClient client = new SmtpClient("smtp.outlook.com");
             client.Port = 587;
             client.Credentials = new NetworkCredential(from, pass);
             client.EnableSsl = true;
