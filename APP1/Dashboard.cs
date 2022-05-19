@@ -129,5 +129,11 @@ namespace APP1
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnnewemp_Click(object sender, EventArgs e)
+        {
+            loadform(new NewEmployee(this));
+            mainpanel.Visible = true;
+        }
     }
 }

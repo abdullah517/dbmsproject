@@ -37,7 +37,7 @@ namespace APP1
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnnewemp = new Guna.UI2.WinForms.Guna2Button();
             this.btnleavedstudent = new Guna.UI2.WinForms.Guna2Button();
             this.btnstudentliving = new Guna.UI2.WinForms.Guna2Button();
             this.btnstudentfees = new Guna.UI2.WinForms.Guna2Button();
@@ -47,14 +47,14 @@ namespace APP1
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnminimize = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnmaximize = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnclose = new Guna.UI2.WinForms.Guna2CircleButton();
             this.hmslabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.mainpanel = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnclose = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnmaximize = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnminimize = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,7 +70,7 @@ namespace APP1
             this.panel1.Controls.Add(this.guna2Button10);
             this.panel1.Controls.Add(this.guna2Button9);
             this.panel1.Controls.Add(this.guna2Button8);
-            this.panel1.Controls.Add(this.guna2Button7);
+            this.panel1.Controls.Add(this.btnnewemp);
             this.panel1.Controls.Add(this.btnleavedstudent);
             this.panel1.Controls.Add(this.btnstudentliving);
             this.panel1.Controls.Add(this.btnstudentfees);
@@ -180,24 +180,25 @@ namespace APP1
             this.guna2Button8.TabIndex = 8;
             this.guna2Button8.Text = "Update_Delete_Employee";
             // 
-            // guna2Button7
+            // btnnewemp
             // 
-            this.guna2Button7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button7.CheckedState.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
-            this.guna2Button7.Location = new System.Drawing.Point(0, 350);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(200, 50);
-            this.guna2Button7.TabIndex = 7;
-            this.guna2Button7.Text = "New Employee";
+            this.btnnewemp.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnnewemp.CheckedState.FillColor = System.Drawing.Color.DarkRed;
+            this.btnnewemp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnnewemp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnnewemp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnnewemp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnnewemp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnnewemp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
+            this.btnnewemp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnnewemp.ForeColor = System.Drawing.Color.White;
+            this.btnnewemp.Image = ((System.Drawing.Image)(resources.GetObject("btnnewemp.Image")));
+            this.btnnewemp.Location = new System.Drawing.Point(0, 350);
+            this.btnnewemp.Name = "btnnewemp";
+            this.btnnewemp.Size = new System.Drawing.Size(200, 50);
+            this.btnnewemp.TabIndex = 7;
+            this.btnnewemp.Text = "New Employee";
+            this.btnnewemp.Click += new System.EventHandler(this.btnnewemp_Click);
             // 
             // btnleavedstudent
             // 
@@ -354,12 +355,60 @@ namespace APP1
             this.panel3.Size = new System.Drawing.Size(957, 50);
             this.panel3.TabIndex = 1;
             // 
+            // btnminimize
+            // 
+            this.btnminimize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnminimize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnminimize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnminimize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnminimize.FillColor = System.Drawing.Color.LightGreen;
+            this.btnminimize.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnminimize.ForeColor = System.Drawing.Color.White;
+            this.btnminimize.Location = new System.Drawing.Point(872, 16);
+            this.btnminimize.Name = "btnminimize";
+            this.btnminimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnminimize.Size = new System.Drawing.Size(25, 18);
+            this.btnminimize.TabIndex = 2;
+            this.btnminimize.Click += new System.EventHandler(this.btnminimize_Click);
+            // 
+            // btnmaximize
+            // 
+            this.btnmaximize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnmaximize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnmaximize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnmaximize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnmaximize.FillColor = System.Drawing.Color.Gold;
+            this.btnmaximize.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnmaximize.ForeColor = System.Drawing.Color.White;
+            this.btnmaximize.Location = new System.Drawing.Point(899, 16);
+            this.btnmaximize.Name = "btnmaximize";
+            this.btnmaximize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnmaximize.Size = new System.Drawing.Size(25, 18);
+            this.btnmaximize.TabIndex = 1;
+            this.btnmaximize.Click += new System.EventHandler(this.btnmaximize_Click);
+            // 
+            // btnclose
+            // 
+            this.btnclose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnclose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnclose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnclose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnclose.FillColor = System.Drawing.Color.Red;
+            this.btnclose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnclose.ForeColor = System.Drawing.Color.White;
+            this.btnclose.Location = new System.Drawing.Point(925, 16);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnclose.Size = new System.Drawing.Size(25, 18);
+            this.btnclose.TabIndex = 0;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            // 
             // hmslabel
             // 
             this.hmslabel.AutoSize = true;
             this.hmslabel.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmslabel.ForeColor = System.Drawing.Color.DarkCyan;
-            this.hmslabel.Location = new System.Drawing.Point(253, 4);
+            this.hmslabel.Location = new System.Drawing.Point(258, 4);
             this.hmslabel.Name = "hmslabel";
             this.hmslabel.Size = new System.Drawing.Size(449, 38);
             this.hmslabel.TabIndex = 0;
@@ -400,54 +449,6 @@ namespace APP1
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnclose
-            // 
-            this.btnclose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnclose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnclose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnclose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnclose.FillColor = System.Drawing.Color.Red;
-            this.btnclose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnclose.ForeColor = System.Drawing.Color.White;
-            this.btnclose.Location = new System.Drawing.Point(925, 16);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnclose.Size = new System.Drawing.Size(25, 18);
-            this.btnclose.TabIndex = 0;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
-            // 
-            // btnmaximize
-            // 
-            this.btnmaximize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnmaximize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnmaximize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnmaximize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnmaximize.FillColor = System.Drawing.Color.Gold;
-            this.btnmaximize.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnmaximize.ForeColor = System.Drawing.Color.White;
-            this.btnmaximize.Location = new System.Drawing.Point(899, 16);
-            this.btnmaximize.Name = "btnmaximize";
-            this.btnmaximize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnmaximize.Size = new System.Drawing.Size(25, 18);
-            this.btnmaximize.TabIndex = 1;
-            this.btnmaximize.Click += new System.EventHandler(this.btnmaximize_Click);
-            // 
-            // btnminimize
-            // 
-            this.btnminimize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnminimize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnminimize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnminimize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnminimize.FillColor = System.Drawing.Color.LightGreen;
-            this.btnminimize.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnminimize.ForeColor = System.Drawing.Color.White;
-            this.btnminimize.Location = new System.Drawing.Point(872, 16);
-            this.btnminimize.Name = "btnminimize";
-            this.btnminimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnminimize.Size = new System.Drawing.Size(25, 18);
-            this.btnminimize.TabIndex = 2;
-            this.btnminimize.Click += new System.EventHandler(this.btnminimize_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -479,7 +480,7 @@ namespace APP1
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2Button btnnewemp;
         private Guna.UI2.WinForms.Guna2Button btnleavedstudent;
         private Guna.UI2.WinForms.Guna2Button btnstudentliving;
         private Guna.UI2.WinForms.Guna2Button btnstudentfees;

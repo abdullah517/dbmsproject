@@ -84,3 +84,4 @@ D:\C# project\dbmsproject\APP1\obj\Debug\APP1.SignUp.resources
 D:\C# project\dbmsproject\APP1\obj\Debug\APP1.splashscreen.resources
 D:\C# project\dbmsproject\APP1\obj\Debug\APP1.StudentFees.resources
 D:\C# project\dbmsproject\APP1\obj\Debug\APP1.UpdateDeleteStudent.resources
+C:\Users\hls\Desktop\databse\dbmsproject\APP1\obj\Debug\APP1.NewEmployee.resources
