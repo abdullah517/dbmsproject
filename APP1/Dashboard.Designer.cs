@@ -187,6 +187,7 @@ namespace APP1
             this.guna2Button7.Size = new System.Drawing.Size(180, 40);
             this.guna2Button7.TabIndex = 9;
             this.guna2Button7.Text = "New Employee";
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // guna2Button8
             // 
@@ -304,7 +305,7 @@ namespace APP1
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1201, 666);
+            this.ClientSize = new System.Drawing.Size(1301, 666);
             this.Controls.Add(this.btnlogout);
             this.Controls.Add(this.btnexit);
             this.Controls.Add(this.guna2Button11);

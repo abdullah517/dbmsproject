@@ -94,5 +94,12 @@ namespace APP1
             LogIn ls = new LogIn(false);
             ls.Show();
         }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            closeallforms();
+            NewEmployee objEmp=new NewEmployee();
+            objEmp.Show();
+        }
     }
 }
