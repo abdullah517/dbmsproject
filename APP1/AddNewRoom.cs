@@ -20,9 +20,16 @@ namespace APP1
             InitializeComponent();
         }
 
+        private Dashboard mainForm = null;
+        public AddNewRoom(Form callingForm)
+        {
+            mainForm = callingForm as Dashboard;
+            InitializeComponent();
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.mainForm.func();
         }
 
         private void AddNewRoom_Load(object sender, EventArgs e)

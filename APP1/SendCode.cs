@@ -60,7 +60,7 @@ namespace APP1
             try
             {
                 client.Send(message);
-                MessageBox.Show("Code Successfully Send");
+                MessageBox.Show("Code Successfully Send","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
