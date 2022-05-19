@@ -22,6 +22,13 @@ namespace APP1
             InitializeComponent();
         }
 
+        private Dashboard mainForm = null;
+        public UpdateDeleteStudent(Form callingForm)
+        {
+            mainForm = callingForm as Dashboard;
+            InitializeComponent();
+        }
+
         private bool checkvalidemail()
         {
             if (Regex.IsMatch(txtemail.Text, emailpatt) == false)
@@ -45,6 +52,7 @@ namespace APP1
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.mainForm.func();
         }
 
         private void UpdateDeleteStudent_Load(object sender, EventArgs e)

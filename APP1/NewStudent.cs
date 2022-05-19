@@ -21,6 +21,13 @@ namespace APP1
             InitializeComponent();
         }
 
+        private Dashboard mainForm = null;
+        public NewStudent(Form callingForm)
+        {
+            mainForm = callingForm as Dashboard;
+            InitializeComponent();
+        }
+
         private bool checkvalidid()
         {
            if (txtid.Text.Length < 13)
@@ -61,6 +68,7 @@ namespace APP1
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.mainForm.func();
         }
 
         private void NewStudent_Load(object sender, EventArgs e)

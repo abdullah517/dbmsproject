@@ -19,9 +19,17 @@ namespace APP1
             InitializeComponent();
         }
 
+        private Dashboard mainForm = null;
+        public StudentFees(Form callingForm)
+        {
+            mainForm = callingForm as Dashboard;
+            InitializeComponent();
+        }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.mainForm.func();
         }
 
         private void StudentFees_Load(object sender, EventArgs e)

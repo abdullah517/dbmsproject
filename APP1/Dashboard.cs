@@ -12,24 +12,73 @@ namespace APP1
 {
     public partial class Dashboard : Form
     {
+        private static Dashboard d;
+        public Dashboard()
+        {
+            InitializeComponent();
+          
+        }
+
+       
 
         private void closeallforms()
         {
             for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
             {
-                if (Application.OpenForms[i].Name != "Dashboard"&& Application.OpenForms[i].Name != "LogIn")
+                if (Application.OpenForms[i].Name != "Dashboard" && Application.OpenForms[i].Name != "LogIn")
                     Application.OpenForms[i].Close();
             }
         }
-        public Dashboard()
+
+        private void btnroom_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+           
+            loadform(new AddNewRoom(this));
+            mainpanel.Visible = true;
         }
 
-        private void btnexit_Click(object sender, EventArgs e)
+        private void btnnewstudent_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+          
+            loadform(new NewStudent(this));
+            mainpanel.Visible = true;
         }
+
+        private void btnupddelstudent_Click(object sender, EventArgs e)
+        {
+        
+            loadform(new UpdateDeleteStudent(this));
+            mainpanel.Visible = true;
+        }
+
+        private void btnstudentfees_Click(object sender, EventArgs e)
+        {
+          
+            loadform(new StudentFees(this));
+            mainpanel.Visible = true;
+        }
+
+        private void btnstudentliving_Click(object sender, EventArgs e)
+        {
+           
+            loadform(new AllStudentsLiving(this));
+            mainpanel.Visible = true;
+        }
+
+        private void btnleavedstudent_Click(object sender, EventArgs e)
+        {
+            
+           
+            loadform(new LeavedStudents(this));
+            mainpanel.Visible = true;
+        }
+
+        public void func()
+        {
+            mainpanel.Visible = false;
+        }
+
+       
         Boolean labelvisible = true;
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -45,49 +94,20 @@ namespace APP1
             }
         }
 
-        private void btnmanageroom_Click(object sender, EventArgs e)
+        private void loadform(object form)
         {
-            closeallforms();
-            AddNewRoom anr = new AddNewRoom();
-            anr.Show();
+            if (this.mainpanel.Controls.Count > 0)
+                this.mainpanel.Controls.RemoveAt(0);
+            Form f = form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.mainpanel.Controls.Add(f);
+            this.mainpanel.Tag = f;
+            f.Show();
         }
 
-        private void new_stu_btn_Click(object sender, EventArgs e)
-        {
-            closeallforms();
-            NewStudent ns = new NewStudent();
-            ns.Show();
-        }
-
-        private void btnFees_Click(object sender, EventArgs e)
-        {
-            closeallforms();
-            StudentFees sf = new StudentFees();
-            sf.Show();
-        }
-
-        private void btnUpdateDeleteStudent_Click(object sender, EventArgs e)
-        {
-            closeallforms();
-            UpdateDeleteStudent uds = new UpdateDeleteStudent();
-            uds.Show();
-        }
-
-        private void btnAllStudents_Click(object sender, EventArgs e)
-        {
-            closeallforms();
-            AllStudentsLiving asl = new AllStudentsLiving();
-            asl.Show();
-        }
-
-        private void btnleavedStudents_Click(object sender, EventArgs e)
-        {
-            closeallforms();
-            LeavedStudents ls = new LeavedStudents();
-            ls.Show();
-        }
-
-        private void btnlogout_Click_1(object sender, EventArgs e)
+        
+        private void btnlogout_Click(object sender, EventArgs e)
         {
             closeallforms();
             this.Hide();
@@ -95,11 +115,27 @@ namespace APP1
             ls.Show();
         }
 
+<<<<<<< HEAD
         private void guna2Button7_Click(object sender, EventArgs e)
         {
             closeallforms();
             NewEmployee objEmp=new NewEmployee();
             objEmp.Show();
+=======
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnmaximize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void btnminimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+>>>>>>> alpha
         }
     }
 }
