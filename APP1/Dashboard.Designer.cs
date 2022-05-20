@@ -408,7 +408,7 @@ namespace APP1
             this.hmslabel.AutoSize = true;
             this.hmslabel.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmslabel.ForeColor = System.Drawing.Color.DarkCyan;
-            this.hmslabel.Location = new System.Drawing.Point(258, 4);
+            this.hmslabel.Location = new System.Drawing.Point(260, 4);
             this.hmslabel.Name = "hmslabel";
             this.hmslabel.Size = new System.Drawing.Size(449, 38);
             this.hmslabel.TabIndex = 0;
