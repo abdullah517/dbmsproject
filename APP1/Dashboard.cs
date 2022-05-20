@@ -12,11 +12,10 @@ namespace APP1
 {
     public partial class Dashboard : Form
     {
-        private static Dashboard d;
+       
         public Dashboard()
         {
             InitializeComponent();
-          
         }
 
        
@@ -122,11 +121,12 @@ namespace APP1
 
         private void btnmaximize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            this.hmslabel.Location = new Point(410, 4);
-            this.btnclose.Location = new Point(1180,16);
-            this.btnmaximize.Location = new Point(1154, 16);
-            this.btnminimize.Location = new Point(1127, 16);
+            
+                this.WindowState = FormWindowState.Maximized;
+                this.hmslabel.Location = new Point(410, 4);
+                this.btnclose.Location = new Point(1130, 16);
+                this.btnmaximize.Location = new Point(1104, 16);
+                this.btnminimize.Location = new Point(1077, 16);
         }
 
         private void btnminimize_Click(object sender, EventArgs e)

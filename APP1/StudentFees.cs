@@ -14,10 +14,7 @@ namespace APP1
     {
         function fs = new function();
         string query;
-        public StudentFees()
-        {
-            InitializeComponent();
-        }
+       
 
         private Dashboard mainForm = null;
         public StudentFees(Form callingForm)

@@ -14,10 +14,7 @@ namespace APP1
     {
         function fs = new function();
         string query;
-        public LeavedStudents()
-        {
-            InitializeComponent();
-        }
+        
 
         private Dashboard mainForm = null;
         public LeavedStudents(Form callingForm)

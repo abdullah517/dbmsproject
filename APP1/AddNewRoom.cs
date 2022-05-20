@@ -15,10 +15,7 @@ namespace APP1
         function fn=new function();
         String query;
 
-        public AddNewRoom()
-        {
-            InitializeComponent();
-        }
+     
 
         private Dashboard mainForm = null;
         public AddNewRoom(Form callingForm)
@@ -57,7 +54,8 @@ namespace APP1
                 else
                     status = "No";
                 labelroom1.Visible=false;
-                query ="insert into rooms(roomNo,roomStatus) values("+txtroomno1.Text+",'"+status+"')";
+                int beds = int.Parse(txtbed.Text);
+                query ="insert into rooms(roomNo,roomStatus,totalbeds) values("+txtroomno1.Text+",'"+status+"',"+beds+")";
                 fn.setdata(query,"Room Added.");
                 AddNewRoom_Load(this,null);
             }
@@ -132,6 +130,17 @@ namespace APP1
         }
 
         private void txtroomno2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (char.IsDigit(ch) == true)
+                e.Handled = false;
+            else if (ch == 8)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void txtbed_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
             if (char.IsDigit(ch) == true)

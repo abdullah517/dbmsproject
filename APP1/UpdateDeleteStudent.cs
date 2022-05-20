@@ -17,10 +17,7 @@ namespace APP1
         string query;
         string emailpatt = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
 
-        public UpdateDeleteStudent()
-        {
-            InitializeComponent();
-        }
+       
 
         private Dashboard mainForm = null;
         public UpdateDeleteStudent(Form callingForm)

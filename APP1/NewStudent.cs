@@ -16,10 +16,7 @@ namespace APP1
         string query;
         string emailpatt = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
         function fn = new function();
-        public NewStudent()
-        {
-            InitializeComponent();
-        }
+        
 
         private Dashboard mainForm = null;
         public NewStudent(Form callingForm)
@@ -88,6 +85,41 @@ namespace APP1
             clearall();
         }
 
+        private void checkroomstatus(int number,int roomno) {
+            query = "select*from newStudent where roomNo=" + roomno + "";
+            DataSet ds = fn.GetData(query);
+            if (ds.Tables[0].Rows.Count == number)
+            {
+                query = "update rooms set Booked='Yes'";
+                fn.setdata(query, "room is fully booked");
+            }
+        }
+
+        private int getbeds(int room)
+        {
+            query = "select totalbeds from rooms where roomNo=" + room + "";
+            DataSet ds = fn.GetData(query);
+            int totalbeds = int.Parse(ds.Tables[0].Rows[0][0].ToString());
+            return totalbeds;
+        }
+
+        private void getbedno(int beds,ref int bedno,int roomno)
+        {
+            int rng = beds + 1;
+            Random random = new Random();
+            while(true)
+            {
+                 bedno=random.Next(1, rng);
+                MessageBox.Show(bedno.ToString());
+                query = "select*from newStudent where bedno=" + bedno + "and roomNo="+roomno+"";
+                DataSet ds = fn.GetData(query);
+                if (ds.Tables[0].Rows.Count == 0)
+                {
+                    break;
+                }
+            }
+        }
+
         private void btnsave_Click(object sender, EventArgs e)
         {
            if(txtclgname.Text==""||txtemail.Text==""||txtFname.Text==""
@@ -114,12 +146,16 @@ namespace APP1
             }
             else
             {
+                int bedno=0;
                 Int64 mobileno = Int64.Parse(txtnumber.Text);
                 int roomno = int.Parse(ComboBoxRoomNo.Text);
+                int beds = getbeds(roomno);
+                getbedno(beds,ref bedno,roomno);
                 query = "insert into newStudent (mobile,sname,fname,mname,email," +
-                    "paddress,college,idproof,roomNo)values("+mobileno+",'"+txtname.Text+ "','" + txtFname.Text + "','" + txtMname.Text + "','" + txtemail.Text + "','" + txtpermanent.Text + "','" + txtclgname.Text + "','" + txtid.Text + "',"+roomno+") update rooms set Booked='Yes'where roomNo="+roomno+"";
+                    "paddress,college,idproof,roomNo,bedno)values("+mobileno+",'"+txtname.Text+ "','" + txtFname.Text + "','" + txtMname.Text + "','" + txtemail.Text + "','" + txtpermanent.Text + "','" + txtclgname.Text + "','" + txtid.Text + "',"+roomno+","+ bedno + ")";
                 fn.setdata(query, "Student Registration Successful.");
                 clearall();
+                checkroomstatus(beds, roomno);
             }
  
         }
