@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewEmployee));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,9 +50,15 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnclear = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnsave = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnsave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +93,6 @@
             this.label3.Size = new System.Drawing.Size(51, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -182,6 +188,7 @@
             this.mobilenumber.SelectedText = "";
             this.mobilenumber.Size = new System.Drawing.Size(369, 29);
             this.mobilenumber.TabIndex = 9;
+            this.mobilenumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mobilenumber_KeyPress);
             // 
             // name
             // 
@@ -204,6 +211,7 @@
             this.name.SelectedText = "";
             this.name.Size = new System.Drawing.Size(369, 29);
             this.name.TabIndex = 10;
+            this.name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.name_KeyPress);
             // 
             // mothername
             // 
@@ -226,6 +234,7 @@
             this.mothername.SelectedText = "";
             this.mothername.Size = new System.Drawing.Size(369, 29);
             this.mothername.TabIndex = 12;
+            this.mothername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mothername_KeyPress);
             // 
             // fathername
             // 
@@ -248,6 +257,7 @@
             this.fathername.SelectedText = "";
             this.fathername.Size = new System.Drawing.Size(369, 29);
             this.fathername.TabIndex = 11;
+            this.fathername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.fathername_KeyPress);
             // 
             // uniqueid
             // 
@@ -270,6 +280,7 @@
             this.uniqueid.SelectedText = "";
             this.uniqueid.Size = new System.Drawing.Size(369, 29);
             this.uniqueid.TabIndex = 15;
+            this.uniqueid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.uniqueid_KeyPress);
             // 
             // permanentaddress
             // 
@@ -350,7 +361,7 @@
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 18;
             this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // btnclear
             // 
@@ -364,7 +375,7 @@
             this.btnclear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.btnclear.TabIndex = 20;
             this.btnclear.TabStop = false;
-            this.btnclear.Click += new System.EventHandler(this.guna2CirclePictureBox3_Click);
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // btnsave
             // 
@@ -378,6 +389,18 @@
             this.btnsave.TabIndex = 21;
             this.btnsave.TabStop = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
             // 
             // NewEmployee
             // 
@@ -410,10 +433,12 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NewEmployee";
             this.Text = "NewEmployee";
-            this.Load += new System.EventHandler(this.NewEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclear)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnsave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,5 +466,8 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox btnclear;
         private Guna.UI2.WinForms.Guna2PictureBox btnsave;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
     }
 }
