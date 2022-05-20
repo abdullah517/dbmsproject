@@ -121,12 +121,25 @@ namespace APP1
 
         private void btnmaximize_Click(object sender, EventArgs e)
         {
-            
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.hmslabel.Location = new Point(260, 4);
+                this.btnclose.Location = new Point(925, 16);
+                this.btnmaximize.Location = new Point(899, 16);
+                this.btnminimize.Location = new Point(872, 16);
+            }
+
+            else
+            {
                 this.WindowState = FormWindowState.Maximized;
                 this.hmslabel.Location = new Point(410, 4);
                 this.btnclose.Location = new Point(1130, 16);
                 this.btnmaximize.Location = new Point(1104, 16);
                 this.btnminimize.Location = new Point(1077, 16);
+                
+            }
+              
         }
 
         private void btnminimize_Click(object sender, EventArgs e)
