@@ -47,20 +47,22 @@ namespace APP1
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExit.Location = new System.Drawing.Point(831, 5);
+            this.btnExit.Location = new System.Drawing.Point(1246, 8);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(40, 30);
+            this.btnExit.Size = new System.Drawing.Size(60, 46);
             this.btnExit.TabIndex = 37;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(2, 7);
+            this.label1.Location = new System.Drawing.Point(24, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 33);
+            this.label1.Size = new System.Drawing.Size(286, 38);
             this.label1.TabIndex = 38;
             this.label1.Text = "Students in Hostel";
             // 
@@ -81,7 +83,7 @@ namespace APP1
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView.ColumnHeadersHeight = 4;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -92,11 +94,13 @@ namespace APP1
             this.DataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataGridView.EnableHeadersVisualStyles = false;
             this.DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridView.Location = new System.Drawing.Point(12, 53);
+            this.DataGridView.Location = new System.Drawing.Point(18, 82);
+            this.DataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersVisible = false;
+            this.DataGridView.RowHeadersWidth = 62;
             this.DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView.Size = new System.Drawing.Size(851, 424);
+            this.DataGridView.Size = new System.Drawing.Size(1276, 652);
             this.DataGridView.TabIndex = 39;
             this.DataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -109,7 +113,7 @@ namespace APP1
             this.DataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.DataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridView.ThemeStyle.HeaderStyle.Height = 4;
             this.DataGridView.ThemeStyle.ReadOnly = false;
             this.DataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -122,14 +126,15 @@ namespace APP1
             // 
             // AllStudentsLiving
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(875, 495);
+            this.ClientSize = new System.Drawing.Size(1312, 762);
             this.Controls.Add(this.DataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AllStudentsLiving";
             this.Text = "AllStudentsLiving";
             this.Load += new System.EventHandler(this.AllStudentsLiving_Load);

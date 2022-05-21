@@ -46,12 +46,6 @@ namespace APP1
             return false;
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            this.mainForm.func();
-        }
-
         private void UpdateDeleteStudent_Load(object sender, EventArgs e)
         {
             this.Location = new Point(350, 150);
@@ -219,6 +213,12 @@ namespace APP1
                 e.Handled = false;
             else
                 e.Handled = true;
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            this.mainForm.func();
         }
     }
 }

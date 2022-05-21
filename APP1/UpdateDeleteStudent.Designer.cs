@@ -49,7 +49,6 @@ namespace APP1
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.label10 = new System.Windows.Forms.Label();
             this.btnupdate = new Guna.UI2.WinForms.Guna2Button();
             this.btndelete = new Guna.UI2.WinForms.Guna2Button();
@@ -58,6 +57,7 @@ namespace APP1
             this.ComboBoxroomno = new Guna.UI2.WinForms.Guna2ComboBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
@@ -355,20 +355,6 @@ namespace APP1
             this.label1.TabIndex = 18;
             this.label1.Text = "Mobile Number";
             // 
-            // btnExit
-            // 
-            this.btnExit.BorderRadius = 15;
-            this.btnExit.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExit.Location = new System.Drawing.Point(830, 7);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(40, 30);
-            this.btnExit.TabIndex = 36;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -459,19 +445,33 @@ namespace APP1
             // 
             this.errorProvider2.ContainerControl = this;
             // 
+            // btnExit
+            // 
+            this.btnExit.BorderRadius = 15;
+            this.btnExit.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExit.Location = new System.Drawing.Point(833, 5);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(40, 30);
+            this.btnExit.TabIndex = 44;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            // 
             // UpdateDeleteStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(875, 559);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.ComboBoxroomno);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.ComboBoxlivingstatus);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.txtclgname);
@@ -521,7 +521,6 @@ namespace APP1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnExit;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2Button btnupdate;
         private Guna.UI2.WinForms.Guna2Button btndelete;
@@ -530,5 +529,6 @@ namespace APP1
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxroomno;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
     }
 }

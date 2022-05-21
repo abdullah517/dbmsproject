@@ -70,7 +70,7 @@
     <Compile Include="AllStudentsLiving.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllStudentsLiving.Designer.cs">
+    <Compile Include="AllStudentsLiving.designer.cs">
       <DependentUpon>AllStudentsLiving.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
