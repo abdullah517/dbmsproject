@@ -147,7 +147,7 @@
         9gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Button11.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnleavedemp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAABU9JREFUSEu1V2lIXVcQ9rnvrXGpW4Wg1VoVd6sQlxRFpaBJxR9NorZpjKLEoFQr
@@ -176,7 +176,7 @@
         9gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Button10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnempworking.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAABYpJREFUSEuFl0tslUUUx8sthQIVSmnv67vv2/vofbUN0YBG3ECkCG4kanwkLGqj
@@ -206,7 +206,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2Button9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnemppayment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAACQBJREFUSEullnlQk3cax9mxO53OHm2n07rT3T92pv9s/3PG3Xama7ez29Gqa1dW
@@ -250,7 +250,7 @@
         v2Lg/8XCq4vjp22a56dsRBcRV905ATURVpIzJ1WuJO/jXwGI+TfwXI3EZay8OAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Button8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnupddelemp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAABZZJREFUSEudl8lvG1Ucx+O4LRXYs3nmvfES24nTOE5t1/Eep46zh6QKaakEakhZ

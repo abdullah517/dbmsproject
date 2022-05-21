@@ -61,6 +61,12 @@
     <Compile Include="AddNewRoom.Designer.cs">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllEmployeeWorking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllEmployeeWorking.Designer.cs">
+      <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllStudentsLiving.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,18 @@
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeePayment.Designer.cs">
+      <DependentUpon>EmployeePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeavedEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeavedEmployee.Designer.cs">
+      <DependentUpon>LeavedEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
@@ -130,6 +148,12 @@
     <Compile Include="StudentFees.Designer.cs">
       <DependentUpon>StudentFees.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateDeleteEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDeleteEmployee.Designer.cs">
+      <DependentUpon>UpdateDeleteEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateDeleteStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +163,20 @@
     <EmbeddedResource Include="AddNewRoom.resx">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllEmployeeWorking.resx">
+      <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllStudentsLiving.resx">
       <DependentUpon>AllStudentsLiving.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeePayment.resx">
+      <DependentUpon>EmployeePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeavedEmployee.resx">
+      <DependentUpon>LeavedEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -180,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentFees.resx">
       <DependentUpon>StudentFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDeleteEmployee.resx">
+      <DependentUpon>UpdateDeleteEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDeleteStudent.resx">
       <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>

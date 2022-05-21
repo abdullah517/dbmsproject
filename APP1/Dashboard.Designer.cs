@@ -33,10 +33,10 @@ namespace APP1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnlogout = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnleavedemp = new Guna.UI2.WinForms.Guna2Button();
+            this.btnempworking = new Guna.UI2.WinForms.Guna2Button();
+            this.btnemppayment = new Guna.UI2.WinForms.Guna2Button();
+            this.btnupddelemp = new Guna.UI2.WinForms.Guna2Button();
             this.btnnewemp = new Guna.UI2.WinForms.Guna2Button();
             this.btnleavedstudent = new Guna.UI2.WinForms.Guna2Button();
             this.btnstudentliving = new Guna.UI2.WinForms.Guna2Button();
@@ -66,10 +66,10 @@ namespace APP1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
             this.panel1.Controls.Add(this.btnlogout);
-            this.panel1.Controls.Add(this.guna2Button11);
-            this.panel1.Controls.Add(this.guna2Button10);
-            this.panel1.Controls.Add(this.guna2Button9);
-            this.panel1.Controls.Add(this.guna2Button8);
+            this.panel1.Controls.Add(this.btnleavedemp);
+            this.panel1.Controls.Add(this.btnempworking);
+            this.panel1.Controls.Add(this.btnemppayment);
+            this.panel1.Controls.Add(this.btnupddelemp);
             this.panel1.Controls.Add(this.btnnewemp);
             this.panel1.Controls.Add(this.btnleavedstudent);
             this.panel1.Controls.Add(this.btnstudentliving);
@@ -104,81 +104,85 @@ namespace APP1
             this.btnlogout.Text = "Logout";
             this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
             // 
-            // guna2Button11
+            // btnleavedemp
             // 
-            this.guna2Button11.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button11.CheckedState.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2Button11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
-            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button11.ForeColor = System.Drawing.Color.White;
-            this.guna2Button11.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button11.Image")));
-            this.guna2Button11.Location = new System.Drawing.Point(0, 550);
-            this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.Size = new System.Drawing.Size(200, 50);
-            this.guna2Button11.TabIndex = 11;
-            this.guna2Button11.Text = "Leaved Employees";
+            this.btnleavedemp.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnleavedemp.CheckedState.FillColor = System.Drawing.Color.DarkRed;
+            this.btnleavedemp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnleavedemp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnleavedemp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnleavedemp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnleavedemp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnleavedemp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
+            this.btnleavedemp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnleavedemp.ForeColor = System.Drawing.Color.White;
+            this.btnleavedemp.Image = ((System.Drawing.Image)(resources.GetObject("btnleavedemp.Image")));
+            this.btnleavedemp.Location = new System.Drawing.Point(0, 550);
+            this.btnleavedemp.Name = "btnleavedemp";
+            this.btnleavedemp.Size = new System.Drawing.Size(200, 50);
+            this.btnleavedemp.TabIndex = 11;
+            this.btnleavedemp.Text = "Leaved Employees";
+            this.btnleavedemp.Click += new System.EventHandler(this.btnleavedemp_Click);
             // 
-            // guna2Button10
+            // btnempworking
             // 
-            this.guna2Button10.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button10.CheckedState.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button10.ForeColor = System.Drawing.Color.White;
-            this.guna2Button10.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button10.Image")));
-            this.guna2Button10.Location = new System.Drawing.Point(0, 500);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.Size = new System.Drawing.Size(200, 50);
-            this.guna2Button10.TabIndex = 10;
-            this.guna2Button10.Text = "All Employee Working";
+            this.btnempworking.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnempworking.CheckedState.FillColor = System.Drawing.Color.DarkRed;
+            this.btnempworking.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnempworking.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnempworking.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnempworking.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnempworking.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnempworking.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
+            this.btnempworking.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnempworking.ForeColor = System.Drawing.Color.White;
+            this.btnempworking.Image = ((System.Drawing.Image)(resources.GetObject("btnempworking.Image")));
+            this.btnempworking.Location = new System.Drawing.Point(0, 500);
+            this.btnempworking.Name = "btnempworking";
+            this.btnempworking.Size = new System.Drawing.Size(200, 50);
+            this.btnempworking.TabIndex = 10;
+            this.btnempworking.Text = "All Employee Working";
+            this.btnempworking.Click += new System.EventHandler(this.btnempworking_Click);
             // 
-            // guna2Button9
+            // btnemppayment
             // 
-            this.guna2Button9.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button9.CheckedState.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button9.ForeColor = System.Drawing.Color.White;
-            this.guna2Button9.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button9.Image")));
-            this.guna2Button9.Location = new System.Drawing.Point(0, 450);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(200, 50);
-            this.guna2Button9.TabIndex = 9;
-            this.guna2Button9.Text = "EmployeePayment";
+            this.btnemppayment.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnemppayment.CheckedState.FillColor = System.Drawing.Color.DarkRed;
+            this.btnemppayment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnemppayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnemppayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnemppayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnemppayment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnemppayment.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
+            this.btnemppayment.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnemppayment.ForeColor = System.Drawing.Color.White;
+            this.btnemppayment.Image = ((System.Drawing.Image)(resources.GetObject("btnemppayment.Image")));
+            this.btnemppayment.Location = new System.Drawing.Point(0, 450);
+            this.btnemppayment.Name = "btnemppayment";
+            this.btnemppayment.Size = new System.Drawing.Size(200, 50);
+            this.btnemppayment.TabIndex = 9;
+            this.btnemppayment.Text = "EmployeePayment";
+            this.btnemppayment.Click += new System.EventHandler(this.btnemppayment_Click);
             // 
-            // guna2Button8
+            // btnupddelemp
             // 
-            this.guna2Button8.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button8.CheckedState.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.Image")));
-            this.guna2Button8.Location = new System.Drawing.Point(0, 400);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(200, 50);
-            this.guna2Button8.TabIndex = 8;
-            this.guna2Button8.Text = "Update_Delete_Employee";
+            this.btnupddelemp.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnupddelemp.CheckedState.FillColor = System.Drawing.Color.DarkRed;
+            this.btnupddelemp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnupddelemp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnupddelemp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnupddelemp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnupddelemp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnupddelemp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(212)))));
+            this.btnupddelemp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnupddelemp.ForeColor = System.Drawing.Color.White;
+            this.btnupddelemp.Image = ((System.Drawing.Image)(resources.GetObject("btnupddelemp.Image")));
+            this.btnupddelemp.Location = new System.Drawing.Point(0, 400);
+            this.btnupddelemp.Name = "btnupddelemp";
+            this.btnupddelemp.Size = new System.Drawing.Size(200, 50);
+            this.btnupddelemp.TabIndex = 8;
+            this.btnupddelemp.Text = "Update_Delete_Employee";
+            this.btnupddelemp.Click += new System.EventHandler(this.btnupddelemp_Click);
             // 
             // btnnewemp
             // 
@@ -476,10 +480,10 @@ namespace APP1
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button11;
-        private Guna.UI2.WinForms.Guna2Button guna2Button10;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
+        private Guna.UI2.WinForms.Guna2Button btnleavedemp;
+        private Guna.UI2.WinForms.Guna2Button btnempworking;
+        private Guna.UI2.WinForms.Guna2Button btnemppayment;
+        private Guna.UI2.WinForms.Guna2Button btnupddelemp;
         private Guna.UI2.WinForms.Guna2Button btnnewemp;
         private Guna.UI2.WinForms.Guna2Button btnleavedstudent;
         private Guna.UI2.WinForms.Guna2Button btnstudentliving;

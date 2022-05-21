@@ -152,5 +152,29 @@ namespace APP1
             loadform(new NewEmployee(this));
             mainpanel.Visible = true;
         }
+
+        private void btnupddelemp_Click(object sender, EventArgs e)
+        {
+            loadform(new UpdateDeleteEmployee(this));
+            mainpanel.Visible = true;
+        }
+
+        private void btnemppayment_Click(object sender, EventArgs e)
+        {
+            loadform(new EmployeePayment(this));
+            mainpanel.Visible = true;
+        }
+
+        private void btnempworking_Click(object sender, EventArgs e)
+        {
+            loadform(new AllEmployeeWorking(this));
+            mainpanel.Visible = true;
+        }
+
+        private void btnleavedemp_Click(object sender, EventArgs e)
+        {
+            loadform(new LeavedEmployee(this));
+            mainpanel.Visible = true;
+        }
     }
 }
