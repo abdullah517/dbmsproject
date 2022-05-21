@@ -111,7 +111,7 @@ namespace APP1
             {
                  bedno=random.Next(1, rng);
                 MessageBox.Show(bedno.ToString());
-                query = "select*from newStudent where bedno=" + bedno + "and roomNo="+roomno+"";
+                query = "select*from newStudent where bedno=" + bedno + "and roomNo="+roomno+ "and where living='Yes'";
                 DataSet ds = fn.GetData(query);
                 if (ds.Tables[0].Rows.Count == 0)
                 {
