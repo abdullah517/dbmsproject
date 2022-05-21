@@ -31,13 +31,13 @@ namespace APP1
 
         public void splashstart()
         {
-           
+
             Application.Run(new splashscreen());
         }
 
         private void btnsignin_Click(object sender, EventArgs e)
         {
-            
+
             if (txtusername.Text != "" && txtpassword.Text != "")
             {
                 query = "select*from appuser where email='" + txtusername.Text + "'and pass='" + txtpassword.Text + "'";
@@ -55,7 +55,7 @@ namespace APP1
                 }
             }
             else
-                MessageBox.Show("Please fill both fields","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Please fill both fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void linksignup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -80,5 +80,15 @@ namespace APP1
             else
                 txtpassword.PasswordChar = '*';
         }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
+
+
+
+    
+

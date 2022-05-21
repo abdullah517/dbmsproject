@@ -30,39 +30,20 @@ namespace APP1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtpassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnsignin = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.linksignup = new System.Windows.Forms.LinkLabel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.linkforget = new System.Windows.Forms.LinkLabel();
             this.CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.bntclose = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bntclose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(143, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Login";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(81, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Welcome. Please Login";
             // 
             // txtusername
             // 
@@ -73,10 +54,10 @@ namespace APP1
             this.txtusername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtusername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtusername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtusername.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.txtusername.FillColor = System.Drawing.Color.GhostWhite;
             this.txtusername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtusername.Font = new System.Drawing.Font("Segoe UI", 12.75F);
-            this.txtusername.ForeColor = System.Drawing.Color.White;
+            this.txtusername.ForeColor = System.Drawing.Color.SteelBlue;
             this.txtusername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtusername.Location = new System.Drawing.Point(74, 138);
             this.txtusername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -96,10 +77,10 @@ namespace APP1
             this.txtpassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtpassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtpassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtpassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.txtpassword.FillColor = System.Drawing.Color.GhostWhite;
             this.txtpassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpassword.Font = new System.Drawing.Font("Segoe UI", 12.75F);
-            this.txtpassword.ForeColor = System.Drawing.Color.White;
+            this.txtpassword.ForeColor = System.Drawing.Color.SteelBlue;
             this.txtpassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpassword.Location = new System.Drawing.Point(74, 200);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -113,12 +94,11 @@ namespace APP1
             // btnsignin
             // 
             this.btnsignin.BorderRadius = 22;
-            this.btnsignin.BorderThickness = 1;
-            this.btnsignin.FillColor = System.Drawing.Color.White;
+            this.btnsignin.FillColor = System.Drawing.Color.GhostWhite;
             this.btnsignin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsignin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnsignin.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnsignin.HoverState.BorderColor = System.Drawing.Color.White;
-            this.btnsignin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnsignin.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnsignin.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnsignin.Location = new System.Drawing.Point(103, 281);
             this.btnsignin.Name = "btnsignin";
@@ -151,11 +131,6 @@ namespace APP1
             this.linksignup.Text = "Sign Up";
             this.linksignup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linksignup_LinkClicked);
             // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
-            // 
             // linkforget
             // 
             this.linkforget.AutoSize = true;
@@ -176,9 +151,11 @@ namespace APP1
             this.CheckBox1.CheckedState.BorderRadius = 0;
             this.CheckBox1.CheckedState.BorderThickness = 0;
             this.CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CheckBox1.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckBox1.ForeColor = System.Drawing.Color.White;
             this.CheckBox1.Location = new System.Drawing.Point(208, 256);
             this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(102, 17);
+            this.CheckBox1.Size = new System.Drawing.Size(111, 20);
             this.CheckBox1.TabIndex = 9;
             this.CheckBox1.Text = "Show Password";
             this.CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -187,12 +164,55 @@ namespace APP1
             this.CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.CheckBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
+            // bntclose
+            // 
+            this.bntclose.Image = ((System.Drawing.Image)(resources.GetObject("bntclose.Image")));
+            this.bntclose.ImageRotate = 0F;
+            this.bntclose.Location = new System.Drawing.Point(331, 8);
+            this.bntclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bntclose.Name = "bntclose";
+            this.bntclose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.bntclose.Size = new System.Drawing.Size(43, 42);
+            this.bntclose.TabIndex = 55;
+            this.bntclose.TabStop = false;
+            this.bntclose.Click += new System.EventHandler(this.btnclose_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(152, 61);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 28);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "Login";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(143, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 23);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Welcome";
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(382, 390);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.bntclose);
             this.Controls.Add(this.CheckBox1);
             this.Controls.Add(this.linkforget);
             this.Controls.Add(this.linksignup);
@@ -200,30 +220,29 @@ namespace APP1
             this.Controls.Add(this.btnsignin);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtusername);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimizeBox = false;
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.bntclose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtusername;
         private Guna.UI2.WinForms.Guna2TextBox txtpassword;
         private Guna.UI2.WinForms.Guna2Button btnsignin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linksignup;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.LinkLabel linkforget;
         private Guna.UI2.WinForms.Guna2CheckBox CheckBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox bntclose;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
 

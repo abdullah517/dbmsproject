@@ -18,7 +18,10 @@ namespace APP1
         string emailpatt = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
 
 
-        
+        public NewEmployee()
+        {
+            InitializeComponent();
+        }
 
         private Dashboard mainForm = null;
         public NewEmployee(Form callingForm)

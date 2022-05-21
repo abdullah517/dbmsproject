@@ -58,6 +58,7 @@ namespace APP1
             this.txtpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtpass.ForeColor = System.Drawing.Color.Black;
             this.txtpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpass.Location = new System.Drawing.Point(7, 110);
             this.txtpass.Name = "txtpass";
@@ -77,6 +78,7 @@ namespace APP1
             this.txtcfmpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtcfmpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtcfmpass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtcfmpass.ForeColor = System.Drawing.Color.Black;
             this.txtcfmpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtcfmpass.Location = new System.Drawing.Point(9, 178);
             this.txtcfmpass.Name = "txtcfmpass";
@@ -94,8 +96,8 @@ namespace APP1
             this.btnreset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnreset.FillColor = System.Drawing.Color.White;
             this.btnreset.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnreset.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnreset.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnreset.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnreset.Location = new System.Drawing.Point(91, 255);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(119, 39);
@@ -132,7 +134,7 @@ namespace APP1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(319, 350);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);

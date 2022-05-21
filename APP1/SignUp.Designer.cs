@@ -172,9 +172,9 @@ namespace APP1
             this.btnregister.BorderThickness = 1;
             this.btnregister.FillColor = System.Drawing.Color.White;
             this.btnregister.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnregister.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnregister.HoverState.BorderColor = System.Drawing.Color.White;
-            this.btnregister.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnregister.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnregister.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnregister.Location = new System.Drawing.Point(94, 382);
             this.btnregister.Name = "btnregister";
@@ -254,7 +254,7 @@ namespace APP1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(376, 478);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);

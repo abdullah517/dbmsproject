@@ -91,12 +91,6 @@
     <Compile Include="LeavedEmployee.Designer.cs">
       <DependentUpon>LeavedEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogIn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LogIn.Designer.cs">
-      <DependentUpon>LogIn.cs</DependentUpon>
-    </Compile>
     <Compile Include="function.cs" />
     <Compile Include="LeavedStudents.cs">
       <SubType>Form</SubType>
@@ -104,10 +98,16 @@
     <Compile Include="LeavedStudents.Designer.cs">
       <DependentUpon>LeavedStudents.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewEmployee.Designer.cs">
+    <Compile Include="NewEmployee.designer.cs">
       <DependentUpon>NewEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="NewStudent.cs">
@@ -178,11 +178,11 @@
     <EmbeddedResource Include="LeavedEmployee.resx">
       <DependentUpon>LeavedEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogIn.resx">
-      <DependentUpon>LogIn.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LeavedStudents.resx">
       <DependentUpon>LeavedStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewEmployee.resx">
       <DependentUpon>NewEmployee.cs</DependentUpon>

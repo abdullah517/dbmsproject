@@ -58,6 +58,7 @@ namespace APP1
             this.txtemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtemail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtemail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtemail.ForeColor = System.Drawing.Color.Black;
             this.txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtemail.Location = new System.Drawing.Point(12, 87);
             this.txtemail.Name = "txtemail";
@@ -72,9 +73,9 @@ namespace APP1
             this.btnsendcode.BorderRadius = 6;
             this.btnsendcode.FillColor = System.Drawing.Color.White;
             this.btnsendcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsendcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnsendcode.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnsendcode.HoverState.BorderColor = System.Drawing.Color.White;
-            this.btnsendcode.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnsendcode.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnsendcode.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnsendcode.Location = new System.Drawing.Point(84, 139);
             this.btnsendcode.Name = "btnsendcode";
@@ -93,6 +94,7 @@ namespace APP1
             this.txtverify.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtverify.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtverify.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtverify.ForeColor = System.Drawing.Color.Black;
             this.txtverify.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtverify.Location = new System.Drawing.Point(12, 232);
             this.txtverify.MaxLength = 6;
@@ -109,9 +111,9 @@ namespace APP1
             this.btnverify.BorderRadius = 6;
             this.btnverify.FillColor = System.Drawing.Color.White;
             this.btnverify.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnverify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnverify.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnverify.HoverState.BorderColor = System.Drawing.Color.White;
-            this.btnverify.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnverify.HoverState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnverify.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnverify.Location = new System.Drawing.Point(84, 287);
             this.btnverify.Name = "btnverify";
@@ -137,7 +139,7 @@ namespace APP1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(324, 359);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnverify);
