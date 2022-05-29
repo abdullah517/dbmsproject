@@ -46,9 +46,9 @@ namespace APP1
             return false;
         }
 
-        private bool checkcnicexistance(Int64 cnic)
+        private bool checkcnicexistance(string cnic)
         {
-            query = "select all from newStudent where idproof=" + cnic + "";
+            query = "select all from newStudent where idproof='" + cnic + "'";
             DataSet ds = fs.GetData(query);
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -143,7 +143,7 @@ namespace APP1
                     txtid.Focus();
                     errorProvider2.SetError(this.txtid, "Please enter 13 digit valid cnic");
                 }
-                else if (checkcnicexistance(Int64.Parse(txtid.Text)))
+                else if (checkcnicexistance(txtid.Text))
                 {
                     txtid.Clear();
                     txtid.Focus();

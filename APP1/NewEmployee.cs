@@ -30,9 +30,9 @@ namespace APP1
             InitializeComponent();
         }
 
-        private bool checkcnicexistance(Int64 cnic)
+        private bool checkcnicexistance(string cnic)
         {
-            query = "select all from newEmployee where eidproof=" + cnic + "";
+            query = "select all from newEmployee where eidproof='" + cnic + "'";
             DataSet ds = fn.GetData(query);
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -100,7 +100,7 @@ namespace APP1
                 uniqueid.Focus();
                 errorProvider1.SetError(this.uniqueid, "Please enter 13 digit valid cnic");
             }
-            else if (checkcnicexistance(Int64.Parse(uniqueid.Text)))
+            else if (checkcnicexistance(uniqueid.Text))
             {
                 uniqueid.Clear();
                 uniqueid.Focus();
