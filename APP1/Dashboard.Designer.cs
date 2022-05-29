@@ -361,6 +361,7 @@ namespace APP1
             // 
             // btnminimize
             // 
+            this.btnminimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnminimize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnminimize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnminimize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -377,6 +378,7 @@ namespace APP1
             // 
             // btnmaximize
             // 
+            this.btnmaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnmaximize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnmaximize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnmaximize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -393,6 +395,7 @@ namespace APP1
             // 
             // btnclose
             // 
+            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnclose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnclose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnclose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -409,6 +412,7 @@ namespace APP1
             // 
             // hmslabel
             // 
+            this.hmslabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.hmslabel.AutoSize = true;
             this.hmslabel.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmslabel.ForeColor = System.Drawing.Color.DarkCyan;
