@@ -181,7 +181,8 @@
             this.mobilenumber.ForeColor = System.Drawing.Color.Black;
             this.mobilenumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.mobilenumber.Location = new System.Drawing.Point(210, 66);
-            this.mobilenumber.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.mobilenumber.Margin = new System.Windows.Forms.Padding(1);
+            this.mobilenumber.MaxLength = 11;
             this.mobilenumber.Name = "mobilenumber";
             this.mobilenumber.PasswordChar = '\0';
             this.mobilenumber.PlaceholderText = "";
@@ -203,7 +204,7 @@
             this.name.ForeColor = System.Drawing.Color.Black;
             this.name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.name.Location = new System.Drawing.Point(210, 105);
-            this.name.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.name.Margin = new System.Windows.Forms.Padding(1);
             this.name.Name = "name";
             this.name.PasswordChar = '\0';
             this.name.PlaceholderText = "";
@@ -225,7 +226,7 @@
             this.mothername.ForeColor = System.Drawing.Color.Black;
             this.mothername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.mothername.Location = new System.Drawing.Point(210, 185);
-            this.mothername.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.mothername.Margin = new System.Windows.Forms.Padding(1);
             this.mothername.Name = "mothername";
             this.mothername.PasswordChar = '\0';
             this.mothername.PlaceholderText = "";
@@ -247,7 +248,7 @@
             this.fathername.ForeColor = System.Drawing.Color.Black;
             this.fathername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fathername.Location = new System.Drawing.Point(210, 144);
-            this.fathername.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.fathername.Margin = new System.Windows.Forms.Padding(1);
             this.fathername.Name = "fathername";
             this.fathername.PasswordChar = '\0';
             this.fathername.PlaceholderText = "";
@@ -269,7 +270,8 @@
             this.uniqueid.ForeColor = System.Drawing.Color.Black;
             this.uniqueid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.uniqueid.Location = new System.Drawing.Point(210, 317);
-            this.uniqueid.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.uniqueid.Margin = new System.Windows.Forms.Padding(1);
+            this.uniqueid.MaxLength = 13;
             this.uniqueid.Name = "uniqueid";
             this.uniqueid.PasswordChar = '\0';
             this.uniqueid.PlaceholderText = "";
@@ -291,7 +293,7 @@
             this.permanentaddress.ForeColor = System.Drawing.Color.Black;
             this.permanentaddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.permanentaddress.Location = new System.Drawing.Point(210, 269);
-            this.permanentaddress.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.permanentaddress.Margin = new System.Windows.Forms.Padding(1);
             this.permanentaddress.Name = "permanentaddress";
             this.permanentaddress.PasswordChar = '\0';
             this.permanentaddress.PlaceholderText = "";
@@ -312,7 +314,7 @@
             this.emailid.ForeColor = System.Drawing.Color.Black;
             this.emailid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailid.Location = new System.Drawing.Point(210, 226);
-            this.emailid.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.emailid.Margin = new System.Windows.Forms.Padding(1);
             this.emailid.Name = "emailid";
             this.emailid.PasswordChar = '\0';
             this.emailid.PlaceholderText = "";
@@ -337,7 +339,7 @@
             "Mess Staff",
             "Accounts Manager"});
             this.txtdesignation.Location = new System.Drawing.Point(210, 364);
-            this.txtdesignation.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtdesignation.Margin = new System.Windows.Forms.Padding(1);
             this.txtdesignation.Name = "txtdesignation";
             this.txtdesignation.Size = new System.Drawing.Size(266, 36);
             this.txtdesignation.TabIndex = 16;
@@ -348,7 +350,7 @@
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.InitialImage = null;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(739, 7);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(25, 23);
@@ -362,7 +364,7 @@
             this.btnclear.Image = ((System.Drawing.Image)(resources.GetObject("btnclear.Image")));
             this.btnclear.ImageRotate = 0F;
             this.btnclear.Location = new System.Drawing.Point(659, 378);
-            this.btnclear.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnclear.Margin = new System.Windows.Forms.Padding(1);
             this.btnclear.Name = "btnclear";
             this.btnclear.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnclear.Size = new System.Drawing.Size(100, 100);
@@ -376,7 +378,7 @@
             this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
             this.btnsave.ImageRotate = 0F;
             this.btnsave.Location = new System.Drawing.Point(598, 396);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(1);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(48, 48);
             this.btnsave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -438,7 +440,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "NewEmployee";
             this.Text = "NewEmployee";
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();

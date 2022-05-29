@@ -30,7 +30,16 @@ namespace APP1
             InitializeComponent();
         }
 
-
+        private bool checkcnicexistance(Int64 cnic)
+        {
+            query = "select all from newEmployee where eidproof=" + cnic + "";
+            DataSet ds = fn.GetData(query);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                return true;
+            }
+            return false;
+        }
         private bool checkvalidid()
         {
             if (uniqueid.Text.Length < 13)
@@ -90,6 +99,12 @@ namespace APP1
             {
                 uniqueid.Focus();
                 errorProvider1.SetError(this.uniqueid, "Please enter 13 digit valid cnic");
+            }
+            else if (checkcnicexistance(Int64.Parse(uniqueid.Text)))
+            {
+                uniqueid.Clear();
+                uniqueid.Focus();
+                MessageBox.Show("this id already exists", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (checkvalidmobno())
             {

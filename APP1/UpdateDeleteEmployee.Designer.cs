@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateDeleteEmployee));
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,6 +54,10 @@
             this.txtdesignation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtname = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // label9
@@ -175,12 +180,14 @@
             this.txtUniqueid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUniqueid.Location = new System.Drawing.Point(206, 272);
             this.txtUniqueid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUniqueid.MaxLength = 13;
             this.txtUniqueid.Name = "txtUniqueid";
             this.txtUniqueid.PasswordChar = '\0';
             this.txtUniqueid.PlaceholderText = "";
             this.txtUniqueid.SelectedText = "";
             this.txtUniqueid.Size = new System.Drawing.Size(553, 30);
             this.txtUniqueid.TabIndex = 24;
+            this.txtUniqueid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUniqueid_KeyPress);
             // 
             // txtpaddress
             // 
@@ -244,6 +251,7 @@
             this.txtmname.SelectedText = "";
             this.txtmname.Size = new System.Drawing.Size(553, 30);
             this.txtmname.TabIndex = 20;
+            this.txtmname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmname_KeyPress);
             // 
             // txtfname
             // 
@@ -265,6 +273,7 @@
             this.txtfname.SelectedText = "";
             this.txtfname.Size = new System.Drawing.Size(553, 30);
             this.txtfname.TabIndex = 19;
+            this.txtfname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtfname_KeyPress);
             // 
             // label10
             // 
@@ -291,12 +300,14 @@
             this.txtmobile.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtmobile.Location = new System.Drawing.Point(206, 45);
             this.txtmobile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtmobile.MaxLength = 11;
             this.txtmobile.Name = "txtmobile";
             this.txtmobile.PasswordChar = '\0';
             this.txtmobile.PlaceholderText = "";
             this.txtmobile.SelectedText = "";
             this.txtmobile.Size = new System.Drawing.Size(294, 30);
             this.txtmobile.TabIndex = 29;
+            this.txtmobile.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmobile_KeyPress);
             // 
             // label7
             // 
@@ -405,6 +416,7 @@
             this.txtname.SelectedText = "";
             this.txtname.Size = new System.Drawing.Size(553, 30);
             this.txtname.TabIndex = 35;
+            this.txtname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtname_KeyPress);
             // 
             // btnExit
             // 
@@ -419,6 +431,14 @@
             this.btnExit.Size = new System.Drawing.Size(40, 30);
             this.btnExit.TabIndex = 36;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
             // 
             // UpdateDeleteEmployee
             // 
@@ -455,6 +475,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UpdateDeleteEmployee";
             this.Text = "UpdateDeleteEmployee";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,5 +508,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox txtdesignation;
         private Guna.UI2.WinForms.Guna2TextBox txtname;
         private Guna.UI2.WinForms.Guna2Button btnExit;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }

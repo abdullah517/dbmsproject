@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,6 +14,7 @@ namespace APP1
     public partial class UpdateDeleteEmployee : Form
     {
         function fn = new function();
+        string emailpatt = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
         string query;
         private Dashboard mainForm = null;
         public UpdateDeleteEmployee(Form callingForm)
@@ -42,20 +44,86 @@ namespace APP1
             }
         }
 
+        private bool ischeckempty()
+        {
+            if (txtmobile.Text == "" || txtname.Text == "" || txtmname.Text == "" || txtfname.Text == "" || txtpaddress.Text == "" || txtemail.Text == "" || txtUniqueid.Text == "" || txtdesignation.Text == "" || txtworkingstatus.Text == "")
+                return true;
+            return false;
+        }
+
+        private bool checkvalidemail()
+        {
+            if (Regex.IsMatch(txtemail.Text, emailpatt) == false)
+            {
+                return true;
+            }
+            errorProvider1.Clear();
+            return false;
+        }
+
+        private bool checkvalidid()
+        {
+            if (txtUniqueid.Text.Length < 13)
+            {
+                return true;
+            }
+            errorProvider2.Clear();
+            return false;
+        }
+
+        private bool checkcnicexistance(Int64 cnic)
+        {
+            query = "select all from newEmployee where eidproof=" + cnic + "";
+            DataSet ds = fn.GetData(query);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         private void updatebtnEmp_Click(object sender, EventArgs e)
         {
-            Int64 mobile =Int64.Parse(txtmobile.Text);
-            String name=txtname.Text;
-            String fname=txtfname.Text;
-            String mname=txtmname.Text;
-            String email=txtemail.Text;
-            String paddress=txtpaddress.Text;
-            String id=txtUniqueid.Text;
-            String designation=txtdesignation.Text;
-            String workingstatus=txtworkingstatus.Text;
+            if (txtmobile.Text != "")
+            {
+                if (ischeckempty())
+                {
+                    MessageBox.Show("Please fill all Fields.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (checkvalidemail())
+                {
+                    txtemail.Focus();
+                    errorProvider1.SetError(this.txtemail, "Please enter valid email");
+                }
+                else if (checkvalidid())
+                {
+                    txtUniqueid.Focus();
+                    errorProvider2.SetError(this.txtUniqueid, "Please enter 13 digit valid cnic");
+                }
+                else if (checkcnicexistance(Int64.Parse(txtUniqueid.Text)))
+                {
+                    txtUniqueid.Clear();
+                    txtUniqueid.Focus();
+                    MessageBox.Show("this id already exists", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    Int64 mobile = Int64.Parse(txtmobile.Text);
+                    String name = txtname.Text;
+                    String fname = txtfname.Text;
+                    String mname = txtmname.Text;
+                    String email = txtemail.Text;
+                    String paddress = txtpaddress.Text;
+                    String id = txtUniqueid.Text;
+                    String designation = txtdesignation.Text;
+                    String workingstatus = txtworkingstatus.Text;
 
-            query = "update newEmployee set ename='" + name + "',efname='" + fname + "',emname='" + mname + "',eemail='" + email + "',epaddress='" + paddress + "',eidproof='" + id + "',edesignation='" + designation + "',working='" + workingstatus + "' where emobile=" + mobile + "";
-            fn.setdata(query, "Data Updation Successfully");
+                    query = "update newEmployee set ename='" + name + "',efname='" + fname + "',emname='" + mname + "',eemail='" + email + "',epaddress='" + paddress + "',eidproof='" + id + "',edesignation='" + designation + "',working='" + workingstatus + "' where emobile=" + mobile + "";
+                    fn.setdata(query, "Data Updation Successfully");
+                    clearAll();
+                }
+            }
+            
         }
 
         private void deletebtnEmp_Click(object sender, EventArgs e)
@@ -90,6 +158,61 @@ namespace APP1
         {
             this.Close();
             this.mainForm.func();
+        }
+
+        private void txtmobile_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (char.IsDigit(ch) == true)
+                e.Handled = false;
+            else if (ch == 8)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void txtname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (char.IsLetter(ch) == true)
+                e.Handled = false;
+            else if (ch == 8 || ch == 32)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void txtfname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (char.IsLetter(ch) == true)
+                e.Handled = false;
+            else if (ch == 8 || ch == 32)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void txtmname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (char.IsLetter(ch) == true)
+                e.Handled = false;
+            else if (ch == 8 || ch == 32)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void txtUniqueid_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (char.IsDigit(ch) == true)
+                e.Handled = false;
+            else if (ch == 8)
+                e.Handled = false;
+            else
+                e.Handled = true;
         }
     }
 }

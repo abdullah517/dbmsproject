@@ -35,6 +35,17 @@ namespace APP1
             return false;
         }
 
+        private bool checkcnicexistance(Int64 cnic)
+        {
+            query = "select all from newStudent where idproof=" + cnic + "";
+            DataSet ds = fn.GetData(query);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         private bool checkvalidmobno()
         {
             if (txtnumber.Text.Length < 11)
@@ -135,9 +146,14 @@ namespace APP1
                 errorProvider2.SetError(this.txtemail, "Please enter valid email");
             }
            else if (checkvalidid())
-            {
+           {
                 txtid.Focus();
                 errorProvider1.SetError(this.txtid, "Please enter 13 digit valid cnic");
+           }
+           else if (checkcnicexistance(Int64.Parse(txtid.Text))){
+                txtid.Clear();
+                txtid.Focus();
+                MessageBox.Show("this id already exists", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (checkvalidmobno())
             {
