@@ -46,7 +46,7 @@ namespace APP1
                     txtemail.Text = ds.Tables[0].Rows[0][1].ToString();
                     txtdesignation.Text = ds.Tables[0].Rows[0][2].ToString();
 
-                    dataGridView(Int64.Parse(txtmobile.Text));
+                    setdataGridView(Int64.Parse(txtmobile.Text));
                 }
                 else
                 {
@@ -59,7 +59,7 @@ namespace APP1
             }
         }
 
-        public void dataGridView(Int64 mobile)
+        public void setdataGridView(Int64 mobile)
         {
             query = "select * from employeeSalary where mobileNo=" + mobile + "";
             DataSet ds = fn.GetData(query);
@@ -70,7 +70,7 @@ namespace APP1
         {
             if (txtmobile.Text != "" && txtpaymentEmp.Text != "")
             {
-                query = "select * from employeeSalary where mobileNo=" + txtmobile.Text + " and fmonth=" + monthdatetime.Text + "";
+                query = "select * from employeeSalary where mobileNo=" + txtmobile.Text + " and fmonth ='" + monthdatetime.Text+"'";
                 DataSet ds = fn.GetData(query);
 
                 if (ds.Tables[0].Rows.Count == 0)
@@ -78,10 +78,11 @@ namespace APP1
                     Int64 mobile = Convert.ToInt64(txtmobile.Text);
                     String month = monthdatetime.Text;
                     Int64 amount = Convert.ToInt64(txtpaymentEmp.Text);
+                    string msg = "Salary of month " + month + " is paid.";
 
-                    query = "insert into employeeSalary values (" + mobile + "," + month + "," + amount + ")";
-                    fn.setdata(query, "Salary of month " + monthdatetime.Text + " is paid.");
-                    dataGridView(mobile);
+                    query = "insert into employeeSalary values (" + mobile + ",'" + month + "'," + amount + ")";
+                    fn.setdata(query,msg);
+                    setdataGridView(mobile);
                 }
                 else
                 {

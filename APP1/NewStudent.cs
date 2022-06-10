@@ -37,7 +37,7 @@ namespace APP1
 
         private bool checkcnicexistance(string cnic)
         {
-            query = "select all from newStudent where idproof='"+cnic+"'";
+            query = "select * from newStudent where idproof='"+cnic+"'";
             DataSet ds = fn.GetData(query);
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -97,7 +97,7 @@ namespace APP1
         }
 
         private void checkroomstatus(int number,int roomno) {
-            query = "select*from newStudent where roomNo=" + roomno + "";
+            query = "select * from newStudent where roomNo=" + roomno + "";
             DataSet ds = fn.GetData(query);
             if (ds.Tables[0].Rows.Count == number)
             {
@@ -121,8 +121,7 @@ namespace APP1
             while(true)
             {
                  bedno=random.Next(1, rng);
-                MessageBox.Show(bedno.ToString());
-                query = "select*from newStudent where bedno=" + bedno + "and roomNo="+roomno+ "and where living='Yes'";
+                query = "select * from newStudent where bedno=" + bedno + "and roomNo="+roomno+ "and living='Yes'";
                 DataSet ds = fn.GetData(query);
                 if (ds.Tables[0].Rows.Count == 0)
                 {

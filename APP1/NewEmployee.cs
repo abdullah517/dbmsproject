@@ -32,7 +32,7 @@ namespace APP1
 
         private bool checkcnicexistance(string cnic)
         {
-            query = "select all from newEmployee where eidproof='" + cnic + "'";
+            query = "select * from newEmployee where eidproof='" + cnic + "'and edesignation='"+txtdesignation.Text+"'";
             DataSet ds = fn.GetData(query);
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -85,7 +85,7 @@ namespace APP1
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            if (mobilenumber.Text == "" || name.Text == "" || fathername.Text=="" || mothername.Text=="" || emailid.Text=="" || permanentaddress.Text=="" || txtdesignation.SelectedIndex==-1 || uniqueid.Text!="")
+            if (mobilenumber.Text == "" || name.Text == "" || fathername.Text=="" || mothername.Text=="" || emailid.Text=="" || permanentaddress.Text=="" || txtdesignation.SelectedIndex==-1 || uniqueid.Text=="")
             {
                 MessageBox.Show("Please fill all credeintials", "Information", MessageBoxButtons.OK);
               

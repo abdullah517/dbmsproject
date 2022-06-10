@@ -55,7 +55,8 @@ namespace APP1
                     status = "No";
                 labelroom1.Visible=false;
                 int beds = int.Parse(txtbed.Text);
-                query ="insert into rooms(roomNo,roomStatus,totalbeds) values("+txtroomno1.Text+",'"+status+"',"+beds+")";
+                int roomno = int.Parse(txtroomno1.Text);
+                query ="insert into rooms(roomNo,roomStatus,totalbeds) values("+roomno+",'"+status+"',"+beds+")";
                 fn.setdata(query,"Room Added.");
                 AddNewRoom_Load(this,null);
             }
